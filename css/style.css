@@ -80,6 +80,9 @@
     --button-color: #ff8400;
     --bg-blue: #306fff;
     --doc-color: #777676;
+    --footer-back: #efefef;
+    --footer-color: #c9c9c9;
+    --footer-gor: #cbcbcb;
 }
 
 * {
@@ -413,7 +416,11 @@ a.documents {
     color: var(--doc-color);
 }
 
+article.footer {
+    background-color: var(--footer-back);
+}
+
 h1.footer {
-    color: darkgrey;
+    color: var(--footer-color);
     text-align: right;
 }
