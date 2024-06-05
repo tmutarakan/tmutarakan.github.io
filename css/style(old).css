@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 15%;
+    color: white;
+    background-color: darkslateblue;
+    text-align: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.companyname {
+    font-size: 2em;
+}
+
+.menu {
+    margin: auto;
+}
+
+.helpyou {
+    font-size: 3em;
+}
+
+.fastandsafely {
+    font-size: 2em;
+}
+
+.submityourapplication {
+    border: 0;
+    color: white;
+    background-color: orange;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
