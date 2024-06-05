@@ -213,6 +213,18 @@ div.work {
     border-radius: 1rem;
 }
 
+p.workcircle {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--bg-blue);
+    color: white;
+}
+
 article.nearby {
     background-color: white;
     display: flex;
@@ -350,6 +362,19 @@ div.questions {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+p.questionscircle {
+    margin: 0 0 0 1em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--doc-color);
+    color: black;
 }
 
 article.start {
