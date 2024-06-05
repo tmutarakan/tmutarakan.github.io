@@ -79,6 +79,7 @@
 :root {
     --button-color: #ff8400;
     --bg-blue: #306fff;
+    --doc-color: #777676;
 }
 
 * {
@@ -402,8 +403,14 @@ article.documents > * {
     margin: 2% 5%;
 }
 
-p.documents {
-    color: gray;
+div.documents {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+a.documents {
+    color: var(--doc-color);
 }
 
 h1.footer {
