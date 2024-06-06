@@ -5,9 +5,10 @@
 }
 
 @font-face {
-	font-family: 'Roboto-Regular'; 
+	font-family: 'Roboto'; 
 	src: local('Roboto-Regular'),
-		url(/fonts/Roboto/Roboto-Regular.ttf); 
+		url(/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
 }
 
 @font-face {
@@ -104,9 +105,9 @@
 
 .header {
     height: 100vh;
-    padding: 0 15%;
+    padding: 0 10%;
     color: white;
-    background-image: url(/img/ish.png);
+    background-image: url(/img/ish.webp);
     background-size: cover;
     text-align: center;
     display: flex;
@@ -127,10 +128,12 @@
 
 .headercontent > * {
     padding: 5% 0;
+    margin: 5% 0;
 }
 
 .companyname {
-    font-size: 2em;
+    font-size: 1.5em;
+    font-family: KanitCyrillic;
 }
 
 .hamburger {
@@ -143,25 +146,38 @@
 
 .helpyou {
     font-size: 3em;
+    font-family: KanitCyrillic;
 }
 
 .fastandsafely {
     font-size: 2em;
+    font-family: KanitCyrillic;
 }
 
 .submityourapplication {
     border: 0;
     color: white;
     background-color: var(--button-color);
+    box-shadow: 0 0.5em 0.1em rgba(255, 132, 0, 0.4);
     display: inline-block;
-    padding: .75rem 1.25rem;
+    padding: 1.5rem 2.5rem;
     border-radius: 10rem;
     font-size: 0.75em;
-    font-weight: bold;
+    font-family: Roboto;
+}
+
+.submityourapplication:hover {
+    box-shadow: none;
 }
 
 .useragreement {
     font-size: 0.7em;
+    font-family: Roboto;
+    color: white;
+}
+
+a.useragreement {
+    font-size: 1em;
 }
 
 .headercheckbox {
@@ -199,14 +215,15 @@
 
 article.menu {
     height: 100vh;
-    padding: 0 15%;
+    padding: 0 10%;
     color: black;
     background-color: var(--menu-back);
     background-size: cover;
     text-align: center;
-    display: flex;
+    /*display: flex;*/
+    display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 div.menuhead {
@@ -217,11 +234,16 @@ div.menuhead {
 }
 
 div.menucontent {
-    margin: 15% 0;
+    margin: 45% 15%;
 }
 
 div.menucontent > * {
     padding: 5% 0;
+}
+
+p.menucontent {
+    font-family: Roboto;
+    font-size: 1.5em;
 }
 
 article.works {
