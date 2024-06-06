@@ -24,9 +24,10 @@
 }
 
 @font-face {
-	font-family: 'Roboto-Bold'; 
+	font-family: 'Roboto'; 
 	src: local('Roboto-Bold'),
 		url(/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
 }
 
 @font-face {
@@ -99,7 +100,7 @@
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    background-color: gray;
+    background-color: var(--footer-back);
 }
 
 
@@ -246,6 +247,12 @@ p.menucontent {
     font-size: 1.5em;
 }
 
+.headmenu {
+    font-family: KanitCyrillic;
+    font-size: 2em;
+    text-align: center;
+}
+
 article.works {
     margin: 5% 0;
     display: flex;
@@ -256,10 +263,14 @@ article.works {
 
 div.work {
     background-color: white;
-    margin: 5%;
+    margin: 1% 5%;
     padding: 5%;
     border: 0;
     border-radius: 1rem;
+}
+
+h1.workshead {
+    margin-bottom: 5%;
 }
 
 p.workcircle {
@@ -272,9 +283,18 @@ p.workcircle {
     border: 0;
     background-color: var(--bg-blue);
     color: white;
+    font-family: KanitCyrillic;
+    margin-bottom: 5%;
+}
+
+p.work, a.work {
+    font-family: Roboto;
+    padding-bottom: 2%;
 }
 
 article.nearby {
+    margin: 5% 0%;
+    padding: 0 5%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -285,18 +305,18 @@ article.nearby > * {
     margin: 2% 5%;
 }
 
-h1.nearby {
-    text-align: center;
-}
-
 div.nearby {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-a.nearby {
-    text-align: center;
+img.nearby {
+    width: 50%;
+}
+
+h2.nearby, p.nearby, a.nearby{
+    font-family: Roboto;
 }
 
 article.cost {
@@ -304,10 +324,6 @@ article.cost {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-}
-
-h1.cost {
-    text-align: center;
 }
 
 div.cost {
@@ -318,8 +334,12 @@ div.cost {
     border-radius: 1rem;
 }
 
+h2.cost, p.cost {
+    font-family: Roboto;
+}
+
 i.cost {
-    background-color: aqua;
+    background-color: #c5d7ff;
     border: 0;
     border-radius: 1rem;
 }
@@ -329,14 +349,11 @@ article.compare {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    padding: 5% 0;
 }
 
 article.compare > * {
     margin: 2% 5%;
-}
-
-h1.compare {
-    text-align: center;
 }
 
 div.compare {
@@ -346,7 +363,7 @@ div.compare {
 }
 
 p.compare {
-    color: grey;
+    color: var(--doc-color);
 }
 
 article.reliable {
@@ -375,6 +392,10 @@ div.reliable {
     border-radius: 10rem;
 }
 
+p.reliable {
+    font-family: Roboto;
+}
+
 p.reliablephone {
     color: gray;
     margin: 3%;
@@ -389,6 +410,7 @@ button.reliable {
     border-radius: 10rem;
     font-size: 0.75em;
     font-weight: bold;
+    font-family: Roboto;
 }
 
 article.questions {
@@ -403,26 +425,27 @@ article.questions > * {
     margin: 2% 5%;
 }
 
-h1.questions {
-    text-align: center;
-}
-
 div.questions {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-p.questionscircle {
+p.questions {
+    font-family: Roboto;
+}
+
+button.questions {
+    visibility: hidden;
     margin: 0 0 0 1em;
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
     line-height: 1em;
     text-align: center;
     border-radius: 50%;
     border: 0;
-    background-color: var(--doc-color);
+    background-color: #d5d5d5;
     color: black;
 }
 
@@ -452,7 +475,12 @@ div.start {
     border-radius: 10rem;
 }
 
+p.start {
+    font-family: Roboto;
+}
+
 p.startphone {
+    font-family: Roboto;
     color: gray;
     margin: 3%;
 }
@@ -466,6 +494,7 @@ button.start {
     border-radius: 10rem;
     font-size: 0.75em;
     font-weight: bold;
+    font-family: Roboto;
 }
 
 article.documents {
@@ -486,15 +515,22 @@ div.documents {
     justify-content: stretch;
 }
 
+h1.documents a.documents{
+    font-family: Roboto;
+}
+
 a.documents {
     color: var(--doc-color);
+    text-decoration: none;
 }
 
 article.footer {
     background-color: var(--footer-back);
+    padding: 5%;
 }
 
 h1.footer {
     color: var(--footer-color);
     text-align: right;
+    font-size: 1.5em;
 }
