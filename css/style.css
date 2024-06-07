@@ -137,6 +137,17 @@
     font-family: KanitCyrillic;
 }
 
+.buttonhamburger, .buttonhamburgerclose {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    display: flex;
+    align-items: center;
+} 
+
 .hamburger {
     filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(302deg) brightness(103%) contrast(101%);
 }
@@ -157,6 +168,7 @@
 
 .submityourapplication {
     border: 0;
+    cursor: pointer;
     color: white;
     background-color: var(--button-color);
     box-shadow: 0 0.5em 0.1em rgba(255, 132, 0, 0.4);
