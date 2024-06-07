@@ -309,7 +309,7 @@ p.work, a.work {
 
 article.nearby {
     margin: 5% 0%;
-    padding: 0 5%;
+    padding: 2% 5%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -320,14 +320,24 @@ article.nearby > * {
     margin: 2% 5%;
 }
 
-div.nearby {
+div.nearbyimg {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: stretch;
 }
 
 img.nearby {
-    width: 50%;
+    width: 45%;
+}
+
+div.nearby {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+div.nearbyrow {
+    display: grid;
+    grid-template-columns: 20vw auto 1fr;
 }
 
 h2.nearby, p.nearby, a.nearby{
@@ -372,9 +382,13 @@ article.compare > * {
 }
 
 div.compare {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+div.comparerow {
+    display: grid;
+    grid-template-columns: 50vw 1fr;
 }
 
 p.compare {
@@ -441,9 +455,13 @@ article.questions > * {
 }
 
 div.questions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+div.questionsrow {
+    display: grid;
+    grid-template-columns: 70vw 1fr;
 }
 
 p.questions {
@@ -451,7 +469,6 @@ p.questions {
 }
 
 button.questions {
-    visibility: hidden;
     margin: 0 0 0 1em;
     display: inline-block;
     width: 2em;
