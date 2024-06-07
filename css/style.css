@@ -148,6 +148,7 @@
     align-items: center;
     -webkit-box-shadow: none; 
     -moz-box-shadow: none;
+    background-color: rgba(0,0,0,0)
 } 
 
 .hamburger {
