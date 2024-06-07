@@ -146,6 +146,8 @@
     outline: none;
     display: flex;
     align-items: center;
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none;
 } 
 
 .hamburger {
