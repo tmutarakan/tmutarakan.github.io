@@ -137,7 +137,7 @@
     font-family: KanitCyrillic;
 }
 
-.buttonhamburger, .buttonhamburgerclose {
+.buttonhamburger, .buttonhamburgerclose, .buttonlandlordclose {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -169,7 +169,7 @@
     font-family: KanitCyrillic;
 }
 
-.submityourapplication {
+.submityourapplication, .submitlandlordcontent {
     border: 0;
     cursor: pointer;
     color: white;
@@ -236,7 +236,6 @@ article.menu {
     background-color: var(--menu-back);
     background-size: cover;
     text-align: center;
-    /*display: flex;*/
     display: none;
     flex-direction: column;
     justify-content: start;
@@ -266,6 +265,50 @@ p.menucontent {
     font-family: KanitCyrillic;
     font-size: 2em;
     text-align: center;
+}
+
+article.landlordregistration {
+    height: 100vh;
+    padding: 0 10%;
+    color: black;
+    background-color: var(--menu-back);
+    background-size: cover;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+div.landlordcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form.landlordcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form.landlordcontent > * {
+    margin: 5%;
+}
+
+p.landlordcontent {
+    font-family: KanitCyrillic;
+    font-size: 2em;
+    text-align: center;
+}
+
+input.landlordcontent {
+    font-family: Roboto;
+    color: var(--doc-color);
+    background-color: #e8e8e8;
+    border-style: solid;
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10rem;
 }
 
 article.works {

@@ -1,4 +1,6 @@
-document.querySelector('.submityourapplication').onclick = myFunction;
+document.querySelector('.submityourapplication').onclick = landlordregistrationOpen;
+document.querySelector('.buttonlandlordclose').onclick = landlordregistrationClose;
+
 document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
 document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
 
@@ -37,8 +39,19 @@ function buttonHamburgerClose() {
 }
 
 
-function myFunction() {
-    alert('Вы нажали на кнопку!');
+function landlordregistrationOpen() {
+    header = document.querySelector('.header');
+    menu = document.querySelector('.landlordregistration');
+    header.style.display = 'none';
+    menu.style.display = 'flex';
+}
+
+
+function landlordregistrationClose() {
+    header = document.querySelector('.header');
+    menu = document.querySelector('.landlordregistration');
+    header.style.display = 'flex';
+    menu.style.display = 'none';
 }
 
 
