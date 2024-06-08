@@ -544,6 +544,10 @@ button.questions {
     color: black;
 }
 
+div.q-1 {
+    display: none;
+}
+
 article.start {
     padding: 5%;
     background-color: var(--bg-blue);

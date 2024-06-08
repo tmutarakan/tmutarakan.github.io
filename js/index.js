@@ -4,6 +4,8 @@ document.querySelector('.buttonlandlordclose').onclick = landlordregistrationClo
 document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
 document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
 
+document.querySelector('button.q-1').onclick = displayQuestion;
+
 
 const checkbox = document.querySelector('.headercheckbox');
 const nearby1 = document.querySelector('.nearby-1');
@@ -77,6 +79,7 @@ setEventListener(checkbox, 'change', function() {
     }
 });
 
+
 nearby1.addEventListener('touchmove', () => { 
     nearby2.style.display = 'block';
     nearby1.style.display = 'none';
@@ -101,3 +104,12 @@ nearby1.addEventListener('touchmove', () => {
     nearby1.style.display = 'block';
     nearby5.style.display = 'none';
  });
+
+
+ function displayQuestion() {
+    content = document.querySelector(`div.${this.classList[1]}`);
+    if (content.style.display === 'none')
+        content.style.display = 'block';
+    else
+        content.style.display = 'none';
+}
