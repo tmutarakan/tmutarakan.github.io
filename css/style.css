@@ -363,6 +363,26 @@ article.nearby > * {
     margin: 2% 5%;
 }
 
+div.nearby-1 {
+    display: block;
+}
+
+div.nearby-2 {
+    display: none;
+}
+
+div.nearby-3 {
+    display: none;
+}
+
+div.nearby-4 {
+    display: none;
+}
+
+div.nearby-5 {
+    display: none;
+}
+
 div.nearbyimg {
     display: flex;
     flex-direction: row;

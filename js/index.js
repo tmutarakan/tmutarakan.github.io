@@ -6,6 +6,11 @@ document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
 
 
 const checkbox = document.querySelector('.headercheckbox');
+const nearby1 = document.querySelector('.nearby-1');
+const nearby2 = document.querySelector('.nearby-2');
+const nearby3 = document.querySelector('.nearby-3');
+const nearby4 = document.querySelector('.nearby-4');
+const nearby5 = document.querySelector('.nearby-5');
 
 const activeButtonBackColor = '#ff8400';
 const activeButtonColor = 'white';
@@ -71,3 +76,28 @@ setEventListener(checkbox, 'change', function() {
         button.setAttribute('disabled', true);
     }
 });
+
+nearby1.addEventListener('touchmove', () => { 
+    nearby2.style.display = 'block';
+    nearby1.style.display = 'none';
+ });
+
+ nearby2.addEventListener('touchmove', () => { 
+    nearby3.style.display = 'block';
+    nearby2.style.display = 'none';
+ });
+
+ nearby3.addEventListener('touchmove', () => { 
+    nearby4.style.display = 'block';
+    nearby3.style.display = 'none';
+ });
+
+ nearby4.addEventListener('touchmove', () => { 
+    nearby5.style.display = 'block';
+    nearby4.style.display = 'none';
+ });
+
+ nearby5.addEventListener('touchmove', () => { 
+    nearby1.style.display = 'block';
+    nearby5.style.display = 'none';
+ });
