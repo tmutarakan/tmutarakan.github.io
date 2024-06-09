@@ -351,6 +351,7 @@ p.work, a.work {
 }
 
 article.nearby {
+    min-height: 80vh;
     margin: 5% 0%;
     padding: 2% 5%;
     background-color: white;
@@ -360,7 +361,12 @@ article.nearby {
 }
 
 article.nearby > * {
-    margin: 2% 5%;
+    margin: 5% 0%;
+    padding: 2% 5%;
+}
+
+div.nearby-1 > *, div.nearby-2 > *, div.nearby-3 > *, div.nearby-4 > *, div.nearby-5 > * {
+    padding: 5% 0%;
 }
 
 div.nearby-1 {
@@ -386,11 +392,17 @@ div.nearby-5 {
 div.nearbyimg {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: space-between;
 }
 
 img.nearby {
     width: 45%;
+}
+
+img.nearbyhand {
+    width: 11%;
+    height: 11%;
+    margin: auto 0;
 }
 
 div.nearby {
@@ -400,7 +412,8 @@ div.nearby {
 
 div.nearbyrow {
     display: grid;
-    grid-template-columns: 20vw auto 1fr;
+    grid-template-columns: 20vw 3vw 1fr;
+    margin: 1% 0;
 }
 
 h2.nearby, p.nearby, a.nearby{
