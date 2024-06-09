@@ -600,16 +600,24 @@ article.questions {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 5%;
 }
 
 article.questions > * {
-    margin: 2% 5%;
+    margin: 2% 0;
+    padding: 5%;
 }
 
 div.questions {
     display: grid;
     grid-template-rows: auto;
+}
+
+div.questionsrow, div.q-1, div.q-2, div.q-3, div.q-4, div.q-5, div.q-6, div.q-7 {
+    padding: 5%;
+}
+
+div.q-1, div.q-2, div.q-3, div.q-4, div.q-5, div.q-6, div.q-7 {
+    display: none;
 }
 
 div.questionsrow {
@@ -637,6 +645,8 @@ button.questions {
 
 div.q-1 {
     display: none;
+    color: var(--doc-color);
+    margin-bottom: 5%;
 }
 
 article.start {

@@ -5,6 +5,12 @@ document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
 document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
 
 document.querySelector('button.q-1').onclick = displayQuestion;
+document.querySelector('button.q-2').onclick = displayQuestion;
+document.querySelector('button.q-3').onclick = displayQuestion;
+document.querySelector('button.q-4').onclick = displayQuestion;
+document.querySelector('button.q-5').onclick = displayQuestion;
+document.querySelector('button.q-6').onclick = displayQuestion;
+document.querySelector('button.q-7').onclick = displayQuestion;
 
 
 const checkbox = document.querySelector('.headercheckbox');
@@ -143,9 +149,21 @@ function handleTouchMove(evt) {
 
 
  function displayQuestion() {
+    const el_class = this.classList[1];
     content = document.querySelector(`div.${this.classList[1]}`);
-    if (content.style.display === 'none')
+    let num = el_class.slice(-1);
+    head = document.querySelector(`div.qr-${num}`);
+    console.log(content);
+    if (content.style.display == 'none') {
         content.style.display = 'block';
-    else
+        head.style.backgroundColor = '#306fff';
+        head.style.color = 'white';
+        head.style.padding = '.75rem 1.25rem';
+        head.style.borderRadius = '10rem';
+    }
+    else {
         content.style.display = 'none';
+        head.style.backgroundColor = 'white';
+        head.style.color = 'black';
+    }
 }
