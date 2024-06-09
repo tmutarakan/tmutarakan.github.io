@@ -493,10 +493,59 @@ div.compare {
 div.comparerow {
     display: grid;
     grid-template-columns: 50vw 1fr;
+    margin-bottom: 3%;
 }
 
-p.compare {
+div.hrcomparerow {
+    width: 100%; /* ширина линии */
+    height: 1px; /* высота / толщина линии */
+    background: #d1d1d1; /* фон / цвет линии */
+    border: 0; /* рамка вокруг разделительной линии (уберем ее) */
+    margin-bottom: 3%;
+}
+
+p.comparehead {
     color: var(--doc-color);
+}
+
+p.compare, p.comparehead, i.compare {
+    font-family: Roboto;
+    font-size: .875em;
+}
+
+p.compare, i.compare {
+    color: #1e2023;
+}
+
+p.ourselves {
+    font-family: KanitCyrillic;
+    font-size: 1em;
+    color: black;
+    background-color: var(--footer-back);
+    border: 0;
+    border-radius: 2rem;
+    padding: 5%;
+}
+
+i.withus {
+    font-family: KanitCyrillic;
+    font-size: 1em;
+    color: white;
+    background-color: var(--bg-blue);
+    border: 0;
+    border-radius: 2rem;
+    padding: 5%;
+}
+
+i.SmartArenda {
+    font-family: KanitCyrillic;
+    font-size: .5em;
+    color: white;
+    background-color: #6090ff;
+    border: 0;
+    border-radius: 1rem;
+    text-align: center;
+    padding: .5em;
 }
 
 article.reliable {
@@ -566,6 +615,7 @@ div.questions {
 div.questionsrow {
     display: grid;
     grid-template-columns: 70vw 1fr;
+    margin-bottom: 3%;
 }
 
 p.questions {
