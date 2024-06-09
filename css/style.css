@@ -230,7 +230,7 @@ a.useragreement {
 }
 
 article.menu {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 10%;
     color: black;
     background-color: var(--menu-back);
@@ -268,7 +268,7 @@ p.menucontent {
 }
 
 article.landlordregistration {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 10%;
     color: black;
     background-color: var(--menu-back);
@@ -434,6 +434,9 @@ div.cost {
     border: 0;
     border-radius: 1rem;
 }
+div.cost > * {
+    margin-top: 3%;
+}
 
 h2.cost, p.cost {
     font-family: Roboto;
@@ -443,6 +446,31 @@ i.cost {
     background-color: #c5d7ff;
     border: 0;
     border-radius: 1rem;
+}
+
+div.costcheckmark {
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+}
+
+i.costcheckmark {
+    background-color: var(--bg-blue);
+    color: white;
+    border: 0;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+div.costimg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img.cost {
+    width: 31%;
 }
 
 article.compare {
