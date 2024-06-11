@@ -492,7 +492,7 @@ div.compare {
 
 div.comparerow {
     display: grid;
-    grid-template-columns: 50vw 1fr;
+    grid-template-columns: 50% 1fr;
     margin-bottom: 3%;
 }
 
@@ -622,8 +622,11 @@ div.q-1, div.q-2, div.q-3, div.q-4, div.q-5, div.q-6, div.q-7 {
 
 div.questionsrow {
     display: grid;
-    grid-template-columns: 70vw 1fr;
+    grid-template-columns: 1fr 10%;
     margin-bottom: 3%;
+    gap: 1em;
+    align-content: end;
+    justify-content: space-between;
 }
 
 p.questions {
@@ -631,11 +634,11 @@ p.questions {
 }
 
 button.questions {
-    margin: 0 0 0 1em;
+    /*margin: 0 0 0 1em;*/
     display: inline-block;
     width: 2em;
     height: 2em;
-    line-height: 1em;
+    line-height: 2em;
     text-align: center;
     border-radius: 50%;
     border: 0;
@@ -727,10 +730,21 @@ a.documents {
 article.footer {
     background-color: var(--footer-back);
     padding: 5%;
+    /*display: flex;
+    justify-content: row;*/
 }
 
 h1.footer {
+    display: flex;
+    align-items: center;
     color: var(--footer-color);
     text-align: right;
     font-size: 1.5em;
+}
+
+h1.footer::before {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--footer-color); /* Эффектно рисуем линию */
+  margin: 0 10px; /* Задаём отступ для отделения текста */
 }

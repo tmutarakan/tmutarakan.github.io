@@ -122,7 +122,8 @@ function handleTouchMove(evt) {
     const yDiff = yDown - clientY;
 
     // Вычисляем, был ли свайп выполнен по горизонтали или вертикали
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    if (Math.abs(xDiff) > Math.abs(yDiff) && xDiff > 0) {
+        console.log(xDiff);
         this.style.display = 'none';
         switch(this.className) {
             case 'nearby-1':  // if (x === 'value1')
@@ -153,17 +154,19 @@ function handleTouchMove(evt) {
     content = document.querySelector(`div.${this.classList[1]}`);
     let num = el_class.slice(-1);
     head = document.querySelector(`div.qr-${num}`);
-    console.log(content);
-    if (content.style.display == 'none') {
+    button = document.querySelector(`button.q-${num}`);
+    if (content.style.display == 'none' || content.style.display == '') {
         content.style.display = 'block';
         head.style.backgroundColor = '#306fff';
         head.style.color = 'white';
-        head.style.padding = '.75rem 1.25rem';
+        /*head.style.padding = '.75rem 1.25rem';*/
         head.style.borderRadius = '10rem';
+        button.textContent = '✖';
     }
     else {
         content.style.display = 'none';
         head.style.backgroundColor = 'white';
         head.style.color = 'black';
+        button.textContent = '+';
     }
 }
