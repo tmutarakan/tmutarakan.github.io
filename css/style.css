@@ -137,7 +137,10 @@
     font-family: KanitCyrillic;
 }
 
-.buttonhamburger, .buttonhamburgerclose, .buttonlandlordclose {
+.buttonhamburger,
+.buttonhamburgerclose,
+.buttonlandlordclose,
+.buttonlandlordsuccessclose {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -311,6 +314,18 @@ input.landlordcontent {
     border-radius: 10rem;
 }
 
+article.landlordregistrationsuccess {
+    min-height: 100vh;
+    padding: 0 10%;
+    color: black;
+    background-color: var(--menu-back);
+    background-size: cover;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
 article.works {
     margin: 5% 0;
     display: flex;
@@ -482,7 +497,8 @@ article.compare {
 }
 
 article.compare > * {
-    margin: 2% 5%;
+    margin: 2% 0;
+    padding: 0 1%;
 }
 
 div.compare {
@@ -491,6 +507,16 @@ div.compare {
 }
 
 div.comparerow {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    margin-bottom: 3%;
+}
+
+div.comparerow > * {
+    padding: 0 10%;
+}
+
+div.comparerowus {
     display: grid;
     grid-template-columns: 50% 1fr;
     margin-bottom: 3%;
@@ -524,7 +550,7 @@ p.ourselves {
     background-color: var(--footer-back);
     border: 0;
     border-radius: 2rem;
-    padding: 5%;
+    padding: 5% 10%;
 }
 
 i.withus {
@@ -534,7 +560,7 @@ i.withus {
     background-color: var(--bg-blue);
     border: 0;
     border-radius: 2rem;
-    padding: 5%;
+    padding: 5% 10%;
 }
 
 i.SmartArenda {

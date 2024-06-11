@@ -1,6 +1,9 @@
 document.querySelector('.submityourapplication').onclick = landlordregistrationOpen;
 document.querySelector('.buttonlandlordclose').onclick = landlordregistrationClose;
 
+document.querySelector('.submitlandlordcontent').onclick = landlordregistrationsuccessOpen;
+document.querySelector('.buttonlandlordsuccessclose').onclick = landlordregistrationsuccessClose;
+
 document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
 document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
 
@@ -66,6 +69,23 @@ function landlordregistrationClose() {
     header.style.display = 'flex';
     menu.style.display = 'none';
 }
+
+
+function landlordregistrationsuccessOpen() {
+    curr = document.querySelector('.landlordregistration');
+    menu = document.querySelector('.landlordregistrationsuccess');
+    curr.style.display = 'none';
+    menu.style.display = 'flex';
+}
+
+
+function landlordregistrationsuccessClose() {
+    header = document.querySelector('.header');
+    menu = document.querySelector('.landlordregistrationsuccess');
+    header.style.display = 'flex';
+    menu.style.display = 'none';
+}
+
 
 
 setEventListener(checkbox, 'change', function() {
