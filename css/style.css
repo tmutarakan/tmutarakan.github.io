@@ -8,6 +8,8 @@
     --menu-back: #f8f8f8;
     --success-color: #60ad6c;
     --white: white;
+    --disabled-btn-back: #dcdcdc;
+    --disabled-btn-color: #b4b4b4;
 }
 
 * {
@@ -110,6 +112,12 @@
 
 .submityourapplication:hover {
     box-shadow: none;
+}
+
+.submitlandlordcontent:disabled {
+    box-shadow: none;
+    background-color: var(--disabled-btn-back);
+    color: var(--disabled-btn-color);
 }
 
 .useragreement {
@@ -456,12 +464,19 @@ div.comparerowus {
     margin-bottom: 3%;
 }
 
-div.hrcomparerow {
+div.hrcomparerow,
+div.hrquestionsrow {
+    display: block;
     width: 100%; /* ширина линии */
     height: 1px; /* высота / толщина линии */
     background: #d1d1d1; /* фон / цвет линии */
     border: 0; /* рамка вокруг разделительной линии (уберем ее) */
     margin-bottom: 3%;
+}
+
+div.hrcomparerow {
+    width: 90%;
+    margin: 3% 5%;
 }
 
 p.comparehead {
@@ -567,6 +582,12 @@ button.start {
     font-size: 0.75em;
     font-weight: bold;
     font-family: Roboto;
+}
+
+button.reliable:disabled,
+button.start:disabled {
+    color: var(--disabled-btn-color);
+    background-color: var(--disabled-btn-back);
 }
 
 article.questions {

@@ -49,30 +49,52 @@ const activeButtonColor = 'white';
 const noactiveButtonBackColor = '#dcdcdc';
 const noactiveButtonColor = '#b4b4b4';
 
-const landlordphone = document.querySelector('input.landlordphone');
-const reliablephone = document.querySelector('input.reliablephone');
-const startphone = document.querySelector('input.startphone');
-
 
 document.querySelectorAll('[type="tel"]').forEach(function(element) {
     element.required = true;
     element.IMask = IMask(element, {
         mask: '+{7}(900)000-00-00'
     });
- 
-    element.addEventListener('input', function() {
-        btn = document.querySelector(`button.${this.name}`)
-        if (!this.IMask.masked.isComplete) {
-            this.setCustomValidity('Некорректно введённый номер');
-            this.reportValidity();
-            btn.setAttribute('disabled', true);
-        } else {
-            this.setCustomValidity('');
-            btn.removeAttribute('disabled');
+});
 
-        }
+
+document.querySelectorAll('[type="email"]').forEach(function(element) {
+    element.required = true;
+    element.IMask = IMask(element, {
+        mask: /^\S*@?\S*$/
     });
 });
+
+ 
+function validate_phone() {
+    btn = document.querySelector(`button.${this.name}`)
+    if (!this.IMask.masked.isComplete) {
+        this.setCustomValidity('Некорректно введённый номер');
+        this.reportValidity();
+        btn.setAttribute('disabled', true);
+    } else {
+        this.setCustomValidity('');
+        btn.removeAttribute('disabled');
+    }
+}
+
+
+function validate_email() {
+    btn = document.querySelector(`button.${this.name}`)
+    if (!this.IMask.masked.isComplete) {
+        this.setCustomValidity('Некорректно введённый e-mail');
+        this.reportValidity();
+        btn.setAttribute('disabled', true);
+    } else {
+        this.setCustomValidity('');
+    }
+}
+
+
+document.querySelector('input.landlordphone').addEventListener('input', validate_phone);
+document.querySelector('input.reliablephone').addEventListener('input', validate_phone);
+document.querySelector('input.startphone').addEventListener('input', validate_phone);
+document.querySelector('input.landlordemail').addEventListener('input', validate_email);
 
 
 function setEventListener(element, type, handler) {

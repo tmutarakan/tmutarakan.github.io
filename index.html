@@ -102,7 +102,7 @@
         <div class="landlordcontent">
           <form class="landlordcontent">
             <p class="landlordcontent">Регистрация Арендодателя</p>
-            <input class="landlordcontent" type="text" placeholder="Ваше имя" />
+            <input class="landlordcontent" type="text" placeholder="Ваше имя" required/>
             <input
               class="landlordcontent landlordphone"
               name="submitlandlordcontent"
@@ -111,9 +111,9 @@
               placeholder="+7 (___) ___ __ __"
               required
             />
-            <input class="landlordcontent" type="email" placeholder="E-mail" />
+            <input class="landlordcontent landlordemail" name="submitlandlordcontent" type="email" placeholder="E-mail" required/>
           </form>
-          <button class="submitlandlordcontent">
+          <button class="submitlandlordcontent" disabled>
             <b>Оставить заявку и найти жильцов</b>
           </button>
         </div>
@@ -429,7 +429,7 @@
               вашу квартиру еще более привлекательной для потенциальных жильцов.
             </p>
           </div>
-          <div class="hrcomparerow"></div>
+          <div class="hrquestionsrow"></div>
           <div class="questionsrow qr-2">
             <p class="questions">
               Зачем страховка, если арендатор вносит залоговый депозит?
@@ -446,7 +446,7 @@
             <br>
             <p>Подробнее расскажет менеджер.</p>
           </div>
-          <div class="hrcomparerow"></div>
+          <div class="hrquestionsrow"></div>
           <div class="questionsrow qr-3">
             <p class="questions">
               Зачем нужен сервис аренды, если я могу сдать квартиру
@@ -466,7 +466,7 @@
             <br>
             <p>Это бесплатно для вас.</p>
           </div>
-          <div class="hrcomparerow"></div>
+          <div class="hrquestionsrow"></div>
           <div class="questionsrow qr-4">
             <p class="questions">Какие документы нужно будет подписать?</p>
             <button class="questions q-4">+</button>
@@ -480,7 +480,7 @@
               подписать.
             </p>
           </div>
-          <div class="hrcomparerow"></div>
+          <div class="hrquestionsrow"></div>
           <div class="questionsrow qr-5">
             <p class="questions">Как быстро вы находите жильцов?</p>
             <button class="questions q-5">+</button>
@@ -495,7 +495,7 @@
             <br>
             <p>Оценить квартиру поможет наш менеджер.</p>
           </div>
-          <div class="hrcomparerow"></div>
+          <div class="hrquestionsrow"></div>
           <div class="questionsrow qr-6">
             <p class="questions">Что если собственников двое или больше?</p>
             <button class="questions q-6">+</button>
@@ -503,7 +503,7 @@
           <div class="q-6">
             <p>Это не проблема, если все собственники согласны сдавать квартиру.</p>
           </div>
-          <div class="hrcomparerow"></div>
+          <div class="hrquestionsrow"></div>
           <div class="questionsrow qr-7">
             <p class="questions">Можно ли сдать квартиру по доверенности?</p>
             <button class="questions q-7">+</button>
