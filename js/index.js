@@ -13,6 +13,14 @@ document.querySelector('.buttonstartacallclose').onclick = startacallClose;
 document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
 document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
 
+document.querySelector('a.a-header').onclick = buttonHamburgerClose;
+document.querySelector('a.a-works').onclick = buttonHamburgerClose;
+document.querySelector('a.a-nearby').onclick = buttonHamburgerClose;
+document.querySelector('a.a-cost').onclick = buttonHamburgerClose;
+document.querySelector('a.a-compare').onclick = buttonHamburgerClose;
+document.querySelector('a.a-questions').onclick = buttonHamburgerClose;
+document.querySelector('a.a-documents').onclick = buttonHamburgerClose;
+
 document.querySelector('button.q-1').onclick = displayQuestion;
 document.querySelector('button.q-2').onclick = displayQuestion;
 document.querySelector('button.q-3').onclick = displayQuestion;

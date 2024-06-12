@@ -176,15 +176,19 @@ div.menuhead {
 
 div.menucontent {
     margin: 45% 15%;
+    display: flex;
+    flex-direction: column;
 }
 
 div.menucontent > * {
     padding: 5% 0;
 }
 
-p.menucontent {
+a.menucontent {
     font-family: Roboto;
     font-size: 1.5em;
+    text-decoration: none;
+    color: black;
 }
 
 .headmenu {
