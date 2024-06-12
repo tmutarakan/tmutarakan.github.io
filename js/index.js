@@ -1,13 +1,19 @@
+submit_landlordcontent = document.querySelector('.submitlandlordcontent')
+submit_landlordcontent.onclick = landlordregistrationsuccessOpen;
+
+button_reliable = document.querySelector('button.reliable');
+button_reliable.onclick = exceptacallOpen;
+
+button_start = document.querySelector('button.start')
+button_start.onclick = startacallOpen;
+
 document.querySelector('.submityourapplication').onclick = landlordregistrationOpen;
 document.querySelector('.buttonlandlordclose').onclick = landlordregistrationClose;
 
-document.querySelector('.submitlandlordcontent').onclick = landlordregistrationsuccessOpen;
 document.querySelector('.buttonlandlordsuccessclose').onclick = landlordregistrationsuccessClose;
 
-document.querySelector('button.reliable').onclick = exceptacallOpen;
 document.querySelector('.buttonexpectacallclose').onclick = exceptacallClose;
 
-document.querySelector('button.start').onclick = startacallOpen;
 document.querySelector('.buttonstartacallclose').onclick = startacallClose;
 
 document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
@@ -47,20 +53,26 @@ const landlordphone = document.querySelector('input.landlordphone');
 const reliablephone = document.querySelector('input.reliablephone');
 const startphone = document.querySelector('input.startphone');
 
-IMask(
-    landlordphone,
-    { mask: '+{7} ({9}00) 000-00-00' }
-);
 
-IMask(
-    reliablephone,
-    { mask: '{8} ({9}00) 000-00-00' }
-);
+document.querySelectorAll('[type="tel"]').forEach(function(element) {
+    element.required = true;
+    element.IMask = IMask(element, {
+        mask: '+{7}(900)000-00-00'
+    });
+ 
+    element.addEventListener('input', function() {
+        btn = document.querySelector(`button.${this.name}`)
+        if (!this.IMask.masked.isComplete) {
+            this.setCustomValidity('Некорректно введённый номер');
+            this.reportValidity();
+            btn.setAttribute('disabled', true);
+        } else {
+            this.setCustomValidity('');
+            btn.removeAttribute('disabled');
 
-IMask(
-    startphone,
-    { mask: '{8} ({9}00) 000-00-00' }
-);
+        }
+    });
+});
 
 
 function setEventListener(element, type, handler) {

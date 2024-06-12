@@ -701,7 +701,7 @@ h1.footer {
     align-items: center;
     color: var(--footer-color);
     text-align: right;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 h1.footer::before {

@@ -105,8 +105,11 @@
             <input class="landlordcontent" type="text" placeholder="Ваше имя" />
             <input
               class="landlordcontent landlordphone"
+              name="submitlandlordcontent"
+              autocomplete="tel"
               type="tel"
               placeholder="+7 (___) ___ __ __"
+              required
             />
             <input class="landlordcontent" type="email" placeholder="E-mail" />
           </form>
@@ -372,10 +375,13 @@
         <div class="reliable">
           <input
             class="reliablephone"
-              type="tel"
-              placeholder="8 (937) 624 98 17"
-            />
-          <button class="reliable">Позвоните мне</button>
+            name="reliable"
+            autocomplete="tel"
+            type="tel"
+            placeholder="8 (937) 624 98 17"
+            required
+          />
+          <button class="reliable" disabled>Позвоните мне</button>
         </div>
       </article>
       <article class="expectacall">
@@ -513,10 +519,13 @@
         <div class="start">
           <input
             class="startphone"
-              type="tel"
-              placeholder="8 (937) 624 98 17"
+            name="start"
+            autocomplete="tel"
+            type="tel"
+            placeholder="8 (937) 624 98 17"
+            required
             />
-          <button class="start">Позвоните мне</button>
+          <button class="start" disabled>Позвоните мне</button>
         </div>
       </article>
       <article class="startacall">
