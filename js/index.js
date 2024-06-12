@@ -35,8 +35,14 @@ const activeButtonColor = 'white';
 const noactiveButtonBackColor = '#dcdcdc';
 const noactiveButtonColor = '#b4b4b4';
 
+const landlordphone = document.querySelector('input.landlordphone');
 const reliablephone = document.querySelector('input.reliablephone');
 const startphone = document.querySelector('input.startphone');
+
+IMask(
+    landlordphone,
+    { mask: '+{7} ({9}00) 000-00-00' }
+);
 
 IMask(
     reliablephone,
