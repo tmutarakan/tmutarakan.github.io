@@ -293,7 +293,8 @@ p.workcircle {
     margin-bottom: 5%;
 }
 
-p.work, a.work {
+p.work,
+a.work {
     font-family: Roboto;
     padding-bottom: 2%;
 }
@@ -313,7 +314,11 @@ article.nearby > * {
     padding: 2% 5%;
 }
 
-div.nearby-1 > *, div.nearby-2 > *, div.nearby-3 > *, div.nearby-4 > *, div.nearby-5 > * {
+div.nearby-1 > *,
+div.nearby-2 > *,
+div.nearby-3 > *,
+div.nearby-4 > *,
+div.nearby-5 > * {
     padding: 5% 0%;
 }
 
@@ -321,18 +326,9 @@ div.nearby-1 {
     display: block;
 }
 
-div.nearby-2 {
-    display: none;
-}
-
-div.nearby-3 {
-    display: none;
-}
-
-div.nearby-4 {
-    display: none;
-}
-
+div.nearby-2,
+div.nearby-3,
+div.nearby-4,
 div.nearby-5 {
     display: none;
 }
@@ -571,11 +567,24 @@ div.questions {
     grid-template-rows: auto;
 }
 
-div.questionsrow, div.q-1, div.q-2, div.q-3, div.q-4, div.q-5, div.q-6, div.q-7 {
+div.questionsrow,
+div.q-1,
+div.q-2,
+div.q-3,
+div.q-4,
+div.q-5,
+div.q-6,
+div.q-7 {
     padding: 5%;
 }
 
-div.q-1, div.q-2, div.q-3, div.q-4, div.q-5, div.q-6, div.q-7 {
+div.q-1,
+div.q-2,
+div.q-3,
+div.q-4,
+div.q-5,
+div.q-6,
+div.q-7 {
     display: none;
 }
 
@@ -593,22 +602,29 @@ p.questions {
 }
 
 button.questions {
-    /*margin: 0 0 0 1em;*/
-    display: inline-block;
+    display: grid;
     width: 2em;
     height: 2em;
     line-height: 2em;
     text-align: center;
+    align-content: center;
     border-radius: 50%;
     border: 0;
     background-color: #d5d5d5;
     color: black;
 }
 
-div.q-1 {
+div.q-1,
+div.q-2,
+div.q-3,
+div.q-4,
+div.q-5,
+div.q-6,
+div.q-7 {
     display: none;
     color: var(--doc-color);
     margin-bottom: 5%;
+    font-family: Roboto;
 }
 
 article.start {
