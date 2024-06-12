@@ -61,7 +61,9 @@
 .buttonhamburger,
 .buttonhamburgerclose,
 .buttonlandlordclose,
-.buttonlandlordsuccessclose {
+.buttonlandlordsuccessclose,
+.buttonexpectacallclose,
+.buttonstartacallclose {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -192,7 +194,8 @@ p.menucontent {
 
 article.landlordregistration,
 article.landlordregistrationsuccess,
-article.expectacall {
+article.expectacall,
+article.startacall {
     min-height: 100vh;
     padding: 0 10%;
     color: black;
@@ -206,7 +209,8 @@ article.expectacall {
 
 div.landlordcontent,
 div.landlordregistrationsuccess,
-div.expectacall {
+div.expectacall,
+div.startacall {
     flex: 1;
     gap: 2em;
     display: flex;
@@ -241,11 +245,15 @@ input.landlordcontent {
     border-radius: 10rem;
 }
 
-img.landlordregistrationsuccess {
+img.landlordregistrationsuccess,
+img.expectacall,
+img.startacall {
     width: 50%;
 }
 
-p.landlordregistrationsuccess {
+p.landlordregistrationsuccess,
+p.expectacall,
+p.startacall {
     font-family: Roboto;
     font-size: 1.5em;
     color: var(--success-color);

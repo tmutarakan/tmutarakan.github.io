@@ -4,6 +4,12 @@ document.querySelector('.buttonlandlordclose').onclick = landlordregistrationClo
 document.querySelector('.submitlandlordcontent').onclick = landlordregistrationsuccessOpen;
 document.querySelector('.buttonlandlordsuccessclose').onclick = landlordregistrationsuccessClose;
 
+document.querySelector('button.reliable').onclick = exceptacallOpen;
+document.querySelector('.buttonexpectacallclose').onclick = exceptacallClose;
+
+document.querySelector('button.start').onclick = startacallOpen;
+document.querySelector('.buttonstartacallclose').onclick = startacallClose;
+
 document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
 document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
 
@@ -86,6 +92,36 @@ function landlordregistrationsuccessClose() {
     menu.style.display = 'none';
 }
 
+function exceptacallOpen() {
+    curr = document.querySelector('article.reliable');
+    next = document.querySelector('article.expectacall');
+    curr.style.display = 'none';
+    next.style.display = 'flex';
+}
+
+
+function exceptacallClose() {
+    curr = document.querySelector('article.reliable');
+    next = document.querySelector('article.expectacall');
+    curr.style.display = 'flex';
+    next.style.display = 'none';
+}
+
+
+function startacallOpen() {
+    curr = document.querySelector('article.start');
+    next = document.querySelector('article.startacall');
+    curr.style.display = 'none';
+    next.style.display = 'flex';
+}
+
+
+function startacallClose() {
+    curr = document.querySelector('article.start');
+    next = document.querySelector('article.startacall');
+    curr.style.display = 'flex';
+    next.style.display = 'none';
+}
 
 
 setEventListener(checkbox, 'change', function() {
