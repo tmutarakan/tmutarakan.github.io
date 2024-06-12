@@ -1,83 +1,3 @@
-@font-face {
-	font-family: 'KanitCyrillic'; 
-	src: local('KanitCyrillic'),
-		url(/fonts/KanitCyrillic.otf); 
-}
-
-@font-face {
-	font-family: 'Roboto'; 
-	src: local('Roboto-Regular'),
-		url(/fonts/Roboto/Roboto-Regular.ttf);
-    font-weight: normal;
-}
-
-@font-face {
-	font-family: 'Roboto-ThinItalic'; 
-	src: local('Roboto-ThinItalic'),
-		url(/fonts/Roboto/Roboto-ThinItalic.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-Black'; 
-	src: local('Roboto-Black'),
-		url(/fonts/Roboto/Roboto-Black.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto'; 
-	src: local('Roboto-Bold'),
-		url(/fonts/Roboto/Roboto-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-	font-family: 'Roboto-BlackItalic'; 
-	src: local('Roboto-BlackItalic'),
-		url(/fonts/Roboto/Roboto-BlackItalic.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-Light'; 
-	src: local('Roboto-Light'),
-		url(/fonts/Roboto/Roboto-Light.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-BoldItalic'; 
-	src: local('Roboto-BoldItalic'),
-		url(/fonts/Roboto/Roboto-BoldItalic.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-Thin'; 
-	src: local('Roboto-Thin'),
-		url(/fonts/Roboto/Roboto-Thin.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-MediumItalic'; 
-	src: local('Roboto-MediumItalic'),
-		url(/fonts/Roboto/Roboto-MediumItalic.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-Italic'; 
-	src: local('Roboto-Italic'),
-		url(/fonts/Roboto/Roboto-Italic.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-Medium';
-	src: local('Roboto-Medium'),
-		url(/fonts/Roboto/Roboto-Medium.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto-LightItalic';
-	src: local('Roboto-LightItalic'),
-		url(/fonts/Roboto/Roboto-LightItalic.ttf);
-}
-
 :root {
     --button-color: #ff8400;
     --bg-blue: #306fff;
@@ -86,6 +6,7 @@
     --footer-color: #c9c9c9;
     --footer-gor: #cbcbcb;
     --menu-back: #f8f8f8;
+    --success-color: #60ad6c;
 }
 
 * {
@@ -149,8 +70,6 @@
     outline: none;
     display: flex;
     align-items: center;
-    -webkit-box-shadow: none; 
-    -moz-box-shadow: none;
     background-color: rgba(0,0,0,0)
 } 
 
@@ -172,7 +91,8 @@
     font-family: KanitCyrillic;
 }
 
-.submityourapplication, .submitlandlordcontent {
+.submityourapplication,
+.submitlandlordcontent {
     border: 0;
     cursor: pointer;
     color: white;
@@ -270,7 +190,9 @@ p.menucontent {
     text-align: center;
 }
 
-article.landlordregistration {
+article.landlordregistration,
+article.landlordregistrationsuccess,
+article.expectacall {
     min-height: 100vh;
     padding: 0 10%;
     color: black;
@@ -282,10 +204,15 @@ article.landlordregistration {
     justify-content: stretch;
 }
 
-div.landlordcontent {
+div.landlordcontent,
+div.landlordregistrationsuccess,
+div.expectacall {
+    flex: 1;
+    gap: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 form.landlordcontent {
@@ -314,16 +241,14 @@ input.landlordcontent {
     border-radius: 10rem;
 }
 
-article.landlordregistrationsuccess {
-    min-height: 100vh;
-    padding: 0 10%;
-    color: black;
-    background-color: var(--menu-back);
-    background-size: cover;
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    justify-content: stretch;
+img.landlordregistrationsuccess {
+    width: 50%;
+}
+
+p.landlordregistrationsuccess {
+    font-family: Roboto;
+    font-size: 1.5em;
+    color: var(--success-color);
 }
 
 article.works {
