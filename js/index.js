@@ -35,6 +35,19 @@ const activeButtonColor = 'white';
 const noactiveButtonBackColor = '#dcdcdc';
 const noactiveButtonColor = '#b4b4b4';
 
+const reliablephone = document.querySelector('input.reliablephone');
+const startphone = document.querySelector('input.startphone');
+
+IMask(
+    reliablephone,
+    { mask: '{8} ({9}00) 000-00-00' }
+);
+
+IMask(
+    startphone,
+    { mask: '{8} ({9}00) 000-00-00' }
+);
+
 
 function setEventListener(element, type, handler) {
     if (element.addEventListener) {
