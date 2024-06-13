@@ -2,30 +2,30 @@ submit_landlordcontent = document.querySelector('.submitlandlordcontent')
 submit_landlordcontent.onclick = landlordregistrationsuccessOpen;
 
 button_reliable = document.querySelector('button.reliable');
-button_reliable.onclick = exceptacallOpen;
+button_reliable.onclick = sectionOpen;
 
 button_start = document.querySelector('button.start')
-button_start.onclick = startacallOpen;
+button_start.onclick = sectionOpen;
 
-document.querySelector('.submityourapplication').onclick = landlordregistrationOpen;
-document.querySelector('.buttonlandlordclose').onclick = landlordregistrationClose;
+document.querySelector('.submityourapplication').onclick = sectionOpen;
+document.querySelector('.buttonlandlordclose').onclick = sectionClose;
 
-document.querySelector('.buttonlandlordsuccessclose').onclick = landlordregistrationsuccessClose;
+document.querySelector('.buttonlandlordsuccessclose').onclick = sectionClose;
 
-document.querySelector('.buttonexpectacallclose').onclick = exceptacallClose;
+document.querySelector('.buttonexpectacallclose').onclick = sectionClose;
 
-document.querySelector('.buttonstartacallclose').onclick = startacallClose;
+document.querySelector('.buttonstartacallclose').onclick = sectionClose;
 
-document.querySelector('.buttonhamburger').onclick = buttonHamburgerOpen;
-document.querySelector('.buttonhamburgerclose').onclick = buttonHamburgerClose;
+document.querySelector('.buttonhamburger').onclick = sectionOpen;
+document.querySelector('.buttonhamburgerclose').onclick = sectionClose;
 
-document.querySelector('a.a-header').onclick = buttonHamburgerClose;
-document.querySelector('a.a-works').onclick = buttonHamburgerClose;
-document.querySelector('a.a-nearby').onclick = buttonHamburgerClose;
-document.querySelector('a.a-cost').onclick = buttonHamburgerClose;
-document.querySelector('a.a-compare').onclick = buttonHamburgerClose;
-document.querySelector('a.a-questions').onclick = buttonHamburgerClose;
-document.querySelector('a.a-documents').onclick = buttonHamburgerClose;
+document.querySelector('a.a-header').onclick = sectionClose;
+document.querySelector('a.a-works').onclick = sectionClose;
+document.querySelector('a.a-nearby').onclick = sectionClose;
+document.querySelector('a.a-cost').onclick = sectionClose;
+document.querySelector('a.a-compare').onclick = sectionClose;
+document.querySelector('a.a-questions').onclick = sectionClose;
+document.querySelector('a.a-documents').onclick = sectionClose;
 
 document.querySelector('button.q-1').onclick = displayQuestion;
 document.querySelector('button.q-2').onclick = displayQuestion;
@@ -57,14 +57,6 @@ document.querySelectorAll('[type="tel"]').forEach(function(element) {
     });
 });
 
-
-document.querySelectorAll('[type="email"]').forEach(function(element) {
-    element.required = true;
-    element.IMask = IMask(element, {
-        mask: /^\S*@?\S*$/
-    });
-});
-
  
 function validate_phone() {
     btn = document.querySelector(`button.${this.name}`)
@@ -75,18 +67,6 @@ function validate_phone() {
     } else {
         this.setCustomValidity('');
         btn.removeAttribute('disabled');
-    }
-}
-
-
-function validate_email() {
-    btn = document.querySelector(`button.${this.name}`)
-    if (!this.IMask.masked.isComplete) {
-        this.setCustomValidity('Некорректно введённый e-mail');
-        this.reportValidity();
-        btn.setAttribute('disabled', true);
-    } else {
-        this.setCustomValidity('');
     }
 }
 
@@ -105,36 +85,18 @@ function setEventListener(element, type, handler) {
     }
 }
 
-
-function buttonHamburgerOpen() {
-    header = document.querySelector('.header');
-    menu = document.querySelector('.menu');
-    header.style.display = 'none';
-    menu.style.display = 'flex';
+function sectionOpen() {
+    main = document.querySelector('.main');
+    section = document.querySelector(this.name);
+    main.style.display = 'none';
+    section.style.display = 'flex';
 }
 
-
-function buttonHamburgerClose() {
-    header = document.querySelector('.header');
-    menu = document.querySelector('.menu');
-    header.style.display = 'flex';
-    menu.style.display = 'none';
-}
-
-
-function landlordregistrationOpen() {
-    header = document.querySelector('.header');
-    menu = document.querySelector('.landlordregistration');
-    header.style.display = 'none';
-    menu.style.display = 'flex';
-}
-
-
-function landlordregistrationClose() {
-    header = document.querySelector('.header');
-    menu = document.querySelector('.landlordregistration');
-    header.style.display = 'flex';
-    menu.style.display = 'none';
+function sectionClose() {
+    main = document.querySelector('.main');
+    section = document.querySelector(this.name);
+    main.style.display = 'flex';
+    section.style.display = 'none';
 }
 
 
@@ -143,45 +105,6 @@ function landlordregistrationsuccessOpen() {
     menu = document.querySelector('.landlordregistrationsuccess');
     curr.style.display = 'none';
     menu.style.display = 'flex';
-}
-
-
-function landlordregistrationsuccessClose() {
-    header = document.querySelector('.header');
-    menu = document.querySelector('.landlordregistrationsuccess');
-    header.style.display = 'flex';
-    menu.style.display = 'none';
-}
-
-function exceptacallOpen() {
-    curr = document.querySelector('article.reliable');
-    next = document.querySelector('article.expectacall');
-    curr.style.display = 'none';
-    next.style.display = 'flex';
-}
-
-
-function exceptacallClose() {
-    curr = document.querySelector('article.reliable');
-    next = document.querySelector('article.expectacall');
-    curr.style.display = 'flex';
-    next.style.display = 'none';
-}
-
-
-function startacallOpen() {
-    curr = document.querySelector('article.start');
-    next = document.querySelector('article.startacall');
-    curr.style.display = 'none';
-    next.style.display = 'flex';
-}
-
-
-function startacallClose() {
-    curr = document.querySelector('article.start');
-    next = document.querySelector('article.startacall');
-    curr.style.display = 'flex';
-    next.style.display = 'none';
 }
 
 
@@ -276,7 +199,6 @@ function handleTouchMove(evt) {
         content.style.display = 'block';
         head.style.backgroundColor = '#306fff';
         head.style.color = 'white';
-        /*head.style.padding = '.75rem 1.25rem';*/
         head.style.borderRadius = '10rem';
         button.textContent = '✖';
     }

@@ -106,8 +106,12 @@
     display: inline-block;
     padding: 1.5rem 2.5rem;
     border-radius: 10rem;
-    font-size: 0.75em;
+    font-size: 1em;
     font-family: Roboto;
+}
+
+.submityourapplication {
+    width: 100%;
 }
 
 .submityourapplication:hover {
@@ -228,8 +232,13 @@ div.startacall {
     gap: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+}
+
+div.landlordregistrationsuccess,
+div.expectacall,
+div.startacall {
+    align-items: center;
 }
 
 form.landlordcontent {
