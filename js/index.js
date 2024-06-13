@@ -74,7 +74,6 @@ function validate_phone() {
 document.querySelector('input.landlordphone').addEventListener('input', validate_phone);
 document.querySelector('input.reliablephone').addEventListener('input', validate_phone);
 document.querySelector('input.startphone').addEventListener('input', validate_phone);
-document.querySelector('input.landlordemail').addEventListener('input', validate_email);
 
 
 function setEventListener(element, type, handler) {
