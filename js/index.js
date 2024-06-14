@@ -109,7 +109,6 @@ function landlordregistrationsuccessOpen() {
 
 setEventListener(checkbox, 'change', function() {
     button = document.querySelector('.submityourapplication')
-    console.log(button.style.backgroundColor);
     if (this.checked) {
         button.style.backgroundColor  = activeButtonBackColor;
         button.style.color = activeButtonColor;
@@ -162,7 +161,6 @@ function handleTouchMove(evt) {
 
     // Вычисляем, был ли свайп выполнен по горизонтали или вертикали
     if (Math.abs(xDiff) > Math.abs(yDiff) && xDiff > 0) {
-        console.log(xDiff);
         this.style.display = 'none';
         switch(this.className) {
             case 'nearby-1':  // if (x === 'value1')
