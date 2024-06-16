@@ -29,16 +29,14 @@ def export_env():
 def main():
     smtp = export_env()
 
-    server = smtplib.SMTP(smtp.server, smtp.port)
-    server.starttls()  # обновляем соединение с использованием TLS-шифрования
+    server = smtplib.SMTP_SSL(smtp.server, smtp.port)
     server.login(smtp.login, smtp.password)
 
     from_email = smtp.login
     to_email = "mars_marsov@mail.ru"
     subject = "Тестовое сообщение"
     message = "Привет, это тестовое сообщение, отправленное с помощью Python и SMTP."
-
-    server.sendmail(from_email, to_email, f"Subject: {subject}\n\n{message}")
+    server.sendmail(from_email, to_email, f"Subject: {subject}\n\n{message}".encode('utf8'))
 
     server.quit()
 
