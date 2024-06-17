@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import email
 import smtplib
 
 from environs import Env
@@ -10,6 +11,7 @@ class SmtpData:
     password: str
     server: str
     port: int
+    to_email: str
 
 
 def export_env():
@@ -20,7 +22,8 @@ def export_env():
         login = env("SMTP_LOGIN"),
         password = env("SMTP_PASSWORD"),
         server = env("SMTP_SERVER"),
-        port = env.int("SMTP_PORT")
+        port = env.int("SMTP_PORT"),
+        to_email = env("EMAIL_TO")
     )
 
     return smtp
@@ -33,8 +36,8 @@ def send(data: dict):
     server.login(smtp.login, smtp.password)
 
     from_email = smtp.login
-    to_email = "mars_marsov@mail.ru"
-    subject = "Заявка"
+    to_email = smtp.to_email
+    subject = "Заявка SmartArenda24"
     message = f"ФИО: {data['name']}\nТелефон: {data['phone']}"
     server.sendmail(from_email, to_email, f"Subject: {subject}\n\n{message}".encode('utf8'))
 

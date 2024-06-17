@@ -2,10 +2,10 @@ submit_landlordcontent = document.querySelector('.submitlandlordcontent')
 submit_landlordcontent.onclick = landlordregistrationsuccessOpen;
 
 button_reliable = document.querySelector('button.reliable');
-button_reliable.onclick = sectionOpen;
+button_reliable.onclick = phoneOpen;
 
 button_start = document.querySelector('button.start')
-button_start.onclick = sectionOpen;
+button_start.onclick = phoneOpen;
 
 document.querySelector('.submityourapplication').onclick = sectionOpen;
 document.querySelector('.buttonlandlordclose').onclick = sectionClose;
@@ -96,6 +96,25 @@ function sectionClose() {
     section = document.querySelector(this.name);
     main.style.display = 'flex';
     section.style.display = 'none';
+}
+
+function phoneOpen() {
+    main = document.querySelector('.main');
+    section = document.querySelector(this.name);
+    main.style.display = 'none';
+    section.style.display = 'flex';
+
+    const url = document.URL;
+    const div = document.querySelector(`div.${this.className}`);
+    const phone = div.querySelector('input').value;
+    const user = {
+        "name": '',
+        "phone": phone,
+    };
+
+    axios.post(url, user)
+        .then(response => console.log(response.data))
+        .catch(error => console.log(error));
 }
 
 
