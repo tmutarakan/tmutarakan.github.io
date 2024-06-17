@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-import email
+
 import smtplib
 
 from environs import Env
