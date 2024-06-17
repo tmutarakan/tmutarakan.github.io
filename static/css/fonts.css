@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'KanitCyrillic'; 
 	src: local('KanitCyrillic'),
-		url(/static/static/fonts/KanitCyrillic.otf); 
+		url(/static/fonts/KanitCyrillic.otf); 
 }
 
 @font-face {

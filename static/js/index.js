@@ -104,6 +104,18 @@ function landlordregistrationsuccessOpen() {
     menu = document.querySelector('.landlordregistrationsuccess');
     curr.style.display = 'none';
     menu.style.display = 'flex';
+
+    const url = document.URL;
+    const name = document.querySelector('.landlordname').value;
+    const phone = document.querySelector('.landlordphone').value;
+    const user = {
+        "name": name,
+        "phone": phone,
+    };
+
+    axios.post(url, user)
+        .then(response => console.log(response.data))
+        .catch(error => console.log(error));
 }
 
 

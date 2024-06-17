@@ -26,7 +26,7 @@ def export_env():
     return smtp
 
 
-def main():
+def send(data: dict):
     smtp = export_env()
 
     server = smtplib.SMTP_SSL(smtp.server, smtp.port)
@@ -34,12 +34,12 @@ def main():
 
     from_email = smtp.login
     to_email = "mars_marsov@mail.ru"
-    subject = "Тестовое сообщение"
-    message = "Привет, это тестовое сообщение, отправленное с помощью Python и SMTP."
+    subject = "Заявка"
+    message = f"ФИО: {data['name']}\nТелефон: {data['phone']}"
     server.sendmail(from_email, to_email, f"Subject: {subject}\n\n{message}".encode('utf8'))
 
     server.quit()
 
 
 if __name__ == '__main__':
-    main()
+    send({'name': 'Иванов Иван', 'phone': "+79999999900"})
