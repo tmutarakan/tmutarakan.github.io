@@ -27,6 +27,9 @@
     background-color: var(--footer-back);
 }
 
+a {
+    font-family: Roboto;
+}
 
 .header {
     min-height: 100vh;
@@ -197,7 +200,6 @@ div.menucontent > * {
 }
 
 a.menucontent {
-    font-family: Roboto;
     font-size: 1.5em;
     text-decoration: none;
     color: black;
@@ -382,7 +384,9 @@ div.nearbyrow {
     margin: 1% 0;
 }
 
-h2.nearby, p.nearby, a.nearby{
+h2.nearby,
+p.nearby,
+a.nearby{
     font-family: Roboto;
 }
 
@@ -492,12 +496,15 @@ p.comparehead {
     color: var(--doc-color);
 }
 
-p.compare, p.comparehead, i.compare {
+p.compare,
+p.comparehead,
+i.compare {
     font-family: Roboto;
     font-size: .875em;
 }
 
-p.compare, i.compare {
+p.compare,
+i.compare {
     color: #1e2023;
 }
 
