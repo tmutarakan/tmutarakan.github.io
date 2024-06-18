@@ -23,25 +23,15 @@ function handleTouchMove(evt) {
     const xDiff = xDown - clientX;
     const yDiff = yDown - clientY;
 
-    // Вычисляем, был ли свайп выполнен по горизонтали или вертикали
-    if (Math.abs(xDiff) > Math.abs(yDiff) && xDiff > 0) {
+    // Вычисляем, был ли свайп выполнен по горизонтали или вертикали  prev_element="nearby-5" next_element="nearby-2"
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
         this.style.display = 'none';
-        switch(this.className) {
-            case 'nearby-1':  // if (x === 'value1')
-                nearby2.style.display = 'block';
-                break;
-            case 'nearby-2':  // if (x === 'value1')
-                nearby3.style.display = 'block';
-                break;
-            case 'nearby-3':  // if (x === 'value1')
-                nearby4.style.display = 'block';
-                break;
-            case 'nearby-4':  // if (x === 'value1')
-                nearby5.style.display = 'block';
-                break;
-            case 'nearby-5':  // if (x === 'value1')
-                nearby1.style.display = 'block';
-                break;
+        if (xDiff > 0) {
+            next_element = document.querySelector(`.${this.getAttribute('next_element')}`);
+            next_element.style.display = 'block';
+        } else {
+            prev_element = document.querySelector(`.${this.getAttribute('prev_element')}`);
+            prev_element.style.display = 'block';
         }
     }
 
