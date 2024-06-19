@@ -52,7 +52,15 @@ document.querySelectorAll('[type="tel"]').forEach(function(element) {
     });
 });
 
- 
+
+const landlordname = document.querySelector('.landlordname');
+const landlordphone = document.querySelector('.landlordphone');
+
+landlordname.IMask = IMask(landlordname, {
+        mask: /^[a-zA-Z -]+$/
+});
+
+
 function validate_phone() {
     btn = document.querySelector(`button.${this.name}`)
     if (!this.IMask.masked.isComplete) {
@@ -66,7 +74,26 @@ function validate_phone() {
 }
 
 
-document.querySelector('input.landlordphone').addEventListener('input', validate_phone);
+function validate_landlord() {
+    btn = document.querySelector(`button.${this.name}`)
+    if (landlordname.value.length == 0 || !landlordphone.IMask.masked.isComplete) {
+        if (this.classList[1] == 'landlordphone'){
+            this.setCustomValidity('Некорректно введённый номер');
+        } else {
+            this.setCustomValidity('Некорректно введенно ФИО');
+        }
+        this.reportValidity();
+        btn.setAttribute('disabled', true);
+    } else {
+        this.setCustomValidity('');
+        btn.removeAttribute('disabled');
+    }
+}
+
+
+document.querySelector('.landlordname').addEventListener('input', validate_landlord);
+document.querySelector('input.landlordphone').addEventListener('input', validate_landlord);
+
 document.querySelector('input.reliablephone').addEventListener('input', validate_phone);
 document.querySelector('input.startphone').addEventListener('input', validate_phone);
 
@@ -122,6 +149,8 @@ function landlordregistrationsuccessOpen() {
     const url = document.URL;
     const name = document.querySelector('.landlordname').value;
     const phone = document.querySelector('.landlordphone').value;
+    console.log(name);
+    console.log(phone);
     const user = {
         "name": name,
         "phone": phone,
