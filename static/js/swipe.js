@@ -4,12 +4,26 @@ const nearby3 = document.querySelector('.nearby-3');
 const nearby4 = document.querySelector('.nearby-4');
 const nearby5 = document.querySelector('.nearby-5');
 
-let xDown = null, yDown = null;
+// получаем координаты элемента в контексте документа
+function getCoords(elem) {
+    let box = elem.getBoundingClientRect();
+  
+    return {
+      top: box.top + window.scrollY,
+      right: box.right + window.scrollX,
+      bottom: box.bottom + window.scrollY,
+      left: box.left + window.scrollX
+    };
+  }
+
+
+  let xDown = null, yDown = null;
 
 // Фиксируем изначальные координаты прикосновения
 function handleTouchStart(evt) {
     const { clientX, clientY } = evt.touches[0];
-    xDown = clientX; yDown = clientY;
+    xDown = clientX; 
+    yDown = clientY;
 }
 
 // Отслеживаем движение пальца и определяем направление свайпа
@@ -23,8 +37,9 @@ function handleTouchMove(evt) {
     const xDiff = xDown - clientX;
     const yDiff = yDown - clientY;
 
-    // Вычисляем, был ли свайп выполнен по горизонтали или вертикали  prev_element="nearby-5" next_element="nearby-2"
+    // Вычисляем, был ли свайп выполнен по горизонтали или вертикали
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        console.log(getCoords(this))
         this.style.display = 'none';
         if (xDiff > 0) {
             next_element = document.querySelector(`.${this.getAttribute('next_element')}`);
