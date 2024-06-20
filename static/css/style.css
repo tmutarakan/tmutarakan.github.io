@@ -336,7 +336,7 @@ article.nearby {
 
 article.nearby > * {
     margin: 5% 0%;
-    padding: 2% 5%;
+    /*padding: 2% 5%;*/
 }
 
 div.nearby-1 > *,
@@ -347,15 +347,12 @@ div.nearby-5 > * {
     padding: 5% 0%;
 }
 
-div.nearby-1 {
-    display: block;
-}
-
+div.nearby-1,
 div.nearby-2,
 div.nearby-3,
 div.nearby-4,
 div.nearby-5 {
-    display: none;
+    display: block;
 }
 
 div.nearbyimg {

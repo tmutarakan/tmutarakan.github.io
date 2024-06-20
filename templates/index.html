@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/static/css/fonts.css" />
     <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/carousel.css" />
     <title>Smart arenda</title>
   </head>
   <body>
@@ -87,108 +88,115 @@
       </article>
       <article id="nearby" class="nearby">
         <h1 class="nearby headmenu">Мы рядом после заселения жильцов</h1>
-        <div class="nearby-1" prev_element="nearby-5" next_element="nearby-2">
-          <div class="nearbyimg">
-            <img class="nearby" src="/static/img/rubl.webp" alt="рубль" />
-            <img
-              class="nearbyhand"
-              src="/static/img/hand.webp"
-              alt="указательный палец"
-            />
+        <div class="wrap">
+          <div class="b-carousel js-carousel">
+              <!--<button class="b-carousel__prev js-carousel__prev">Prev</button>
+              <button class="b-carousel__next js-carousel__next">Next</button>-->
+              <div class="b-carousel__wrap js-carousel__wrap">
+                <div class="nearby-1 b-carousel__item" prev_element="nearby-5" next_element="nearby-2">
+                  <div class="nearbyimg">
+                    <img class="nearby" src="/static/img/rubl.webp" alt="рубль" />
+                    <img
+                      class="nearbyhand"
+                      src="/static/img/hand.webp"
+                      alt="указательный палец"
+                    />
+                  </div>
+                  <h2 class="nearby">
+                    Защитим вашу квартиру от возможных неприятностей
+                  </h2>
+                  <p class="nearby">
+                    В дополнение к залоговому депозиту, квартира будет застрахована
+                    суммарно на 900 000 рублей:
+                  </p>
+                  <div class="nearby">
+                    <div class="nearbyrow">
+                      <p class="nearby">300 000 ₽</p>
+                      <p class="nearby">-</p>
+                      <p class="nearby">ремонт, коммуникации, окна и двери</p>
+                    </div>
+                    <div class="nearbyrow">
+                      <p class="nearby">100 000 ₽</p>
+                      <p class="nearby">-</p>
+                      <p class="nearby">мебель, техника и ваши вещи</p>
+                    </div>
+                    <div class="nearbyrow">
+                      <p class="nearby">300 000 ₽</p>
+                      <p class="nearby">-</p>
+                      <p class="nearby">стены и перекрытия</p>
+                    </div>
+                    <div class="nearbyrow">
+                      <p class="nearby">200 000 ₽</p>
+                      <p class="nearby">-</p>
+                      <p class="nearby">ответственность перед соседями</p>
+                    </div>
+                  </div>
+                  <a href="#" class="nearby"><b>О страховке ></b></a>
+                </div>
+                <div class="nearby-2 b-carousel__item" prev_element="nearby-1" next_element="nearby-3">
+                  <div class="nearbyimg">
+                    <img class="nearby" src="/static/img/Icon_2.webp" alt="рубль" />
+                    <img
+                      class="nearbyhand"
+                      src="/static/img/hand.webp"
+                      alt="указательный палец"
+                    />
+                  </div>
+                  <h2 class="nearby">Приедем по адресу и проверим квартиру</h2>
+                  <p class="nearby">
+                    Появились сомнения относительно жильцов или просто желаете узнать
+                    текущее состояние квартиры?
+                  </p>
+                  <p class="nearby">Поручите это нам. Расскажем все как есть</p>
+                  <a href="#" class="nearby"><b>О проверке ></b></a>
+                </div>
+                <div class="nearby-3 b-carousel__item"  prev_element="nearby-2" next_element="nearby-4">
+                  <div class="nearbyimg">
+                    <img class="nearby" src="/static/img/Icon_3.webp" alt="рубль" />
+                    <img
+                      class="nearbyhand"
+                      src="/static/img/hand.webp"
+                      alt="указательный палец"
+                    />
+                  </div>
+                  <h2 class="nearby">Будем общаться с жильцами сами</h2>
+                  <p class="nearby">
+                    Поможем в решении бытовых вопросов и начнем поиск нового жильца, как
+                    только узнаем о съезде текущего
+                  </p>
+                </div>
+                <div class="nearby-4 b-carousel__item" prev_element="nearby-3" next_element="nearby-5">
+                  <div class="nearbyimg">
+                    <img class="nearby" src="/static/img/Icon_4.webp" alt="рубль" />
+                    <img
+                      class="nearbyhand"
+                      src="/static/img/hand.webp"
+                      alt="указательный палец"
+                    />
+                  </div>
+                  <h2 class="nearby">Оплатим по счетчикам за последний месяц</h2>
+                  <p class="nearby">
+                    Вслучае, если жилец съехал и не оплатил по счетчикам, это сделаем мы
+                  </p>
+                </div>
+                <div class="nearby-5 b-carousel__item" prev_element="nearby-4" next_element="nearby-1">
+                  <div class="nearbyimg">
+                    <img class="nearby" src="/static/img/Icon_5.webp" alt="рубль" />
+                    <img
+                      class="nearbyhand"
+                      src="/static/img/hand.webp"
+                      alt="указательный палец"
+                    />
+                  </div>
+                  <h2 class="nearby">Подготовим квартиру для новых жильцов</h2>
+                  <p class="nearby">
+                    Закажем клининг и проконтролируем готовность квартиры перед показом
+                    новым жильцам
+                  </p>
+                </div>
+              </div>
           </div>
-          <h2 class="nearby">
-            Защитим вашу квартиру от возможных неприятностей
-          </h2>
-          <p class="nearby">
-            В дополнение к залоговому депозиту, квартира будет застрахована
-            суммарно на 900 000 рублей:
-          </p>
-          <div class="nearby">
-            <div class="nearbyrow">
-              <p class="nearby">300 000 ₽</p>
-              <p class="nearby">-</p>
-              <p class="nearby">ремонт, коммуникации, окна и двери</p>
-            </div>
-            <div class="nearbyrow">
-              <p class="nearby">100 000 ₽</p>
-              <p class="nearby">-</p>
-              <p class="nearby">мебель, техника и ваши вещи</p>
-            </div>
-            <div class="nearbyrow">
-              <p class="nearby">300 000 ₽</p>
-              <p class="nearby">-</p>
-              <p class="nearby">стены и перекрытия</p>
-            </div>
-            <div class="nearbyrow">
-              <p class="nearby">200 000 ₽</p>
-              <p class="nearby">-</p>
-              <p class="nearby">ответственность перед соседями</p>
-            </div>
-          </div>
-          <a href="#" class="nearby"><b>О страховке ></b></a>
         </div>
-        <div class="nearby-2" prev_element="nearby-1" next_element="nearby-3">
-          <div class="nearbyimg">
-            <img class="nearby" src="/static/img/Icon_2.webp" alt="рубль" />
-            <img
-              class="nearbyhand"
-              src="/static/img/hand.webp"
-              alt="указательный палец"
-            />
-          </div>
-          <h2 class="nearby">Приедем по адресу и проверим квартиру</h2>
-          <p class="nearby">
-            Появились сомнения относительно жильцов или просто желаете узнать
-            текущее состояние квартиры?
-          </p>
-          <p class="nearby">Поручите это нам. Расскажем все как есть</p>
-          <a href="#" class="nearby"><b>О проверке ></b></a>
-        </div>
-        <div class="nearby-3"  prev_element="nearby-2" next_element="nearby-4">
-          <div class="nearbyimg">
-            <img class="nearby" src="/static/img/Icon_3.webp" alt="рубль" />
-            <img
-              class="nearbyhand"
-              src="/static/img/hand.webp"
-              alt="указательный палец"
-            />
-          </div>
-          <h2 class="nearby">Будем общаться с жильцами сами</h2>
-          <p class="nearby">
-            Поможем в решении бытовых вопросов и начнем поиск нового жильца, как
-            только узнаем о съезде текущего
-          </p>
-        </div>
-        <div class="nearby-4" prev_element="nearby-3" next_element="nearby-5">
-          <div class="nearbyimg">
-            <img class="nearby" src="/static/img/Icon_4.webp" alt="рубль" />
-            <img
-              class="nearbyhand"
-              src="/static/img/hand.webp"
-              alt="указательный палец"
-            />
-          </div>
-          <h2 class="nearby">Оплатим по счетчикам за последний месяц</h2>
-          <p class="nearby">
-            Вслучае, если жилец съехал и не оплатил по счетчикам, это сделаем мы
-          </p>
-        </div>
-        <div class="nearby-5" prev_element="nearby-4" next_element="nearby-1">
-          <div class="nearbyimg">
-            <img class="nearby" src="/static/img/Icon_5.webp" alt="рубль" />
-            <img
-              class="nearbyhand"
-              src="/static/img/hand.webp"
-              alt="указательный палец"
-            />
-          </div>
-          <h2 class="nearby">Подготовим квартиру для новых жильцов</h2>
-          <p class="nearby">
-            Закажем клининг и проконтролируем готовность квартиры перед показом
-            новым жильцам
-          </p>
-        </div>
-        <br />
       </article>
       <article id="cost" class="cost">
         <h1 class="cost headmenu">Стоимость</h1>
@@ -631,7 +639,8 @@
     <script src="/static/js/imask.js"></script>
     <script src="/static/js/axios.min.js"></script>
     <script src="/static/js/main.js"></script>
-    <script src="/static/js/swipe.js"></script>
+    <!--<script src="/static/js/swipe.js"></script>-->
     <script src="/static/js/questions.js"></script>
+    <script src="/static/js/carousel.js"></script>
   </body>
 </html>
