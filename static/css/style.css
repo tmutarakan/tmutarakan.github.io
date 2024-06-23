@@ -219,7 +219,7 @@ article.landlordregistrationsuccess,
 article.expectacall,
 article.startacall {
     min-height: 100vh;
-    padding: 0 10%;
+    padding: 0 7%;
     color: black;
     background-color: var(--menu-back);
     background-size: cover;
@@ -665,7 +665,7 @@ div.questionsrow {
     grid-template-columns: 1fr 10%;
     margin-bottom: 3%;
     gap: 1em;
-    align-content: end;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -674,17 +674,17 @@ p.questions {
 }
 
 button.questions {
-    display: grid;
+    display: flex;
     width: 2em;
     height: 2em;
-    line-height: 2em;
-    text-align: center;
-    align-content: center;
     border-radius: 50%;
     border: 0;
     background-color: #d5d5d5;
     color: black;
     font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 div.q-1,
@@ -732,7 +732,7 @@ div.documents {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    gap: 0.5em;
+    gap: 1em;
 }
 
 h1.documents,
