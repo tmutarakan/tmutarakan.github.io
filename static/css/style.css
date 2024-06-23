@@ -10,6 +10,7 @@
     --white: white;
     --disabled-btn-back: #dcdcdc;
     --disabled-btn-color: #b4b4b4;
+    --article-header: #1e2023;
 }
 
 * {
@@ -18,30 +19,19 @@
 }
 
 .main {
+    color: var(--article-header);
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    max-width: 1080px;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-}
-
-.main-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    background-color: var(--footer-back);
-}
-
-.main-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    background-color: var(--white);
 }
 
 a {
     font-family: Roboto;
+    text-decoration: none;
+    color: var(--bg-blue);
 }
 
 .header {
@@ -61,6 +51,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .headercontent {
@@ -68,7 +59,6 @@ a {
 }
 
 .headercontent > * {
-    padding: 5% 0;
     margin: 5% 0;
 }
 
@@ -83,14 +73,11 @@ a {
 .buttonlandlordsuccessclose,
 .buttonexpectacallclose,
 .buttonstartacallclose {
-    background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    display: flex;
-    align-items: center;
     background-color: rgba(0,0,0,0)
 } 
 
@@ -105,10 +92,11 @@ a {
 .helpyou {
     font-size: 3em;
     font-family: KanitCyrillic;
+    font-weight: bold;
 }
 
 .fastandsafely {
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: KanitCyrillic;
 }
 
@@ -118,7 +106,7 @@ a {
     cursor: pointer;
     color: var(--white);
     background-color: var(--button-color);
-    box-shadow: 0 0.5em 0.1em rgba(255, 132, 0, 0.4);
+    box-shadow: 0 0.75em 1em rgba(255, 132, 0, 0.4);
     display: inline-block;
     padding: 1.5rem 2.5rem;
     border-radius: 10rem;
@@ -180,12 +168,12 @@ a.useragreement {
 
 .headercheckbox:checked+label::before {
     background-color: var(--white);
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath filter='invert(72%) sepia(79%) saturate(5172%) hue-rotate(202deg) brightness(102%) contrast(91%)' fill='' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
 article.menu {
     min-height: 100vh;
-    padding: 0 10%;
+    padding: 0 7%;
     color: black;
     background-color: var(--menu-back);
     background-size: cover;
@@ -200,6 +188,7 @@ div.menuhead {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 div.menucontent {
@@ -222,6 +211,7 @@ a.menucontent {
     font-family: KanitCyrillic;
     font-size: 2em;
     text-align: center;
+    color: var(--article-header);
 }
 
 article.landlordregistration,
@@ -297,12 +287,12 @@ p.startacall {
 }
 
 article.works {
-    margin: 3em 0;
+    background-color: var(--footer-back);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     text-align: center;
-    padding: 0 7%;
+    padding: 3em 7%;
 }
 
 div.work {
@@ -311,17 +301,21 @@ div.work {
     padding: 5%;
     border: 0;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1.workshead {
     margin-bottom: 5%;
 }
 
-p.workcircle {
-    display: inline-block;
+div.workcircle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 2.5em;
     height: 2.5em;
-    line-height: 2.5em;
     text-align: center;
     border-radius: 50%;
     border: 0;
@@ -329,18 +323,23 @@ p.workcircle {
     color: var(--white);
     font-family: KanitCyrillic;
     margin-bottom: 5%;
+    font-size: 1.2em;
 }
 
+h6.work,
 p.work,
 a.work {
     font-family: Roboto;
     padding-bottom: 2%;
 }
 
+h6.work {
+    font-size: 1.5em;
+}
+
 article.nearby {
     min-height: 80vh;
-    margin: 5% 0%;
-    padding: 2% 7%;
+    padding: 3em 7%;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -349,7 +348,6 @@ article.nearby {
 
 article.nearby > * {
     margin: 5% 0%;
-    /*padding: 2% 5%;*/
 }
 
 div.nearby-1 > *,
@@ -402,16 +400,16 @@ a.nearby{
 }
 
 article.cost {
-    margin: 3em 0;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 0 7%;
+    padding: 3em 7%;
+    background-color: var(--footer-back);
 }
 
 div.cost {
     background-color: var(--white);
-    margin: 5% 0;
+    margin: 1% 0;
     padding: 5%;
     border: 0;
     border-radius: 1rem;
@@ -460,7 +458,7 @@ article.compare {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 5% 0;
+    padding: 3em 0;
 }
 
 article.compare > * {
@@ -551,8 +549,7 @@ i.SmartArenda {
 }
 
 article.reliable {
-    margin: 3em 0;
-    padding: 5%;
+    padding: 3em 5%;
     background-color: var(--bg-blue);
     display: flex;
     flex-direction: column;
@@ -578,9 +575,16 @@ div.start {
     border-radius: 10rem;
 }
 
+h1.reliable,
+h1.start {
+    color: var(--white);
+    font-size: 2.5em;
+}
+
 p.reliable,
 p.start {
     font-family: Roboto;
+    font-size: 1.5em;
 }
 
 input.reliablephone,
@@ -697,8 +701,7 @@ div.q-7 {
 }
 
 article.start {
-    margin: 3em 0;
-    padding: 5%;
+    padding: 3em 5%;
     background-color: var(--bg-blue);
     display: flex;
     flex-direction: column;
@@ -718,7 +721,7 @@ article.documents {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 5%;
+    padding: 3em 5%;
 }
 
 article.documents > * {
@@ -729,6 +732,7 @@ div.documents {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    gap: 0.5em;
 }
 
 h1.documents,
@@ -747,9 +751,7 @@ a.documents {
 
 article.footer {
     background-color: var(--footer-back);
-    padding: 5%;
-    /*display: flex;
-    justify-content: row;*/
+    padding: 3em 5%;
 }
 
 h1.footer {
@@ -757,7 +759,8 @@ h1.footer {
     align-items: center;
     color: var(--footer-color);
     text-align: right;
-    font-size: 1.25em;
+    font-size: 1.1em;
+    font-style: italic;
 }
 
 h1.footer::before {

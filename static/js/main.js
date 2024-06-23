@@ -159,7 +159,7 @@ setEventListener(checkbox, 'change', function() {
     if (this.checked) {
         button.style.backgroundColor  = activeButtonBackColor;
         button.style.color = activeButtonColor;
-        button.style.boxShadow = '0 0.5em 0.1em rgba(255, 132, 0, 0.4)';
+        button.style.boxShadow = '0 0.75em 1em rgba(255, 132, 0, 0.4)';
         button.removeAttribute('disabled');
     }
     else {
