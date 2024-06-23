@@ -56,10 +56,9 @@ a {
 
 .headercontent {
     margin: auto 0;
-}
-
-.headercontent > * {
-    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .companyname {
@@ -293,22 +292,23 @@ article.works {
     flex-direction: column;
     justify-content: stretch;
     text-align: center;
-    padding: 3em 7%;
+    padding: 4em 7%;
+    gap: 0.5em;
+}
+
+h1.workshead,
+h1.cost {
+    margin-bottom: 0.5em;
 }
 
 div.work {
     background-color: var(--white);
-    margin: 1% 0;
     padding: 5%;
     border: 0;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h1.workshead {
-    margin-bottom: 5%;
 }
 
 div.workcircle {
@@ -340,15 +340,12 @@ h6.work {
 
 article.nearby {
     min-height: 80vh;
-    padding: 3em 7%;
+    padding: 4em 7%;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-}
-
-article.nearby > * {
-    margin: 5% 0%;
+    gap: 3em;
 }
 
 div.nearby-1 > *,
@@ -356,7 +353,7 @@ div.nearby-2 > *,
 div.nearby-3 > *,
 div.nearby-4 > *,
 div.nearby-5 > * {
-    padding: 5% 0%;
+    padding: .75em 0%;
 }
 
 div.nearby-1,
@@ -404,23 +401,16 @@ article.cost {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 3em 7%;
+    padding: 4em 7%;
     background-color: var(--footer-back);
+    gap: 1em;
 }
 
 div.cost {
     background-color: var(--white);
-    margin: 1% 0;
     padding: 5%;
     border: 0;
     border-radius: 1rem;
-}
-div.cost > * {
-    margin-top: 3%;
-}
-
-h1.cost {
-    margin-bottom: 5%;
 }
 
 h2.cost, p.cost {
@@ -469,32 +459,25 @@ article.compare {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 3em 0;
-}
-
-article.compare > * {
-    margin: 2% 0;
+    padding: 4em 0;
+    gap: 1em;
 }
 
 div.compare {
     display: grid;
     grid-template-rows: auto;
+    gap: 2em;
 }
 
 div.comparerow {
     display: grid;
     grid-template-columns: 50% 1fr;
-    margin: 0 7% 3%;
-}
-
-div.comparerow > * {
-    padding: 0 10%;
+    padding: 0 7%;
 }
 
 div.comparerowus {
     display: grid;
     grid-template-columns: 50% 1fr;
-    margin: 3%;
 }
 
 div.hrcomparerow,
@@ -504,16 +487,16 @@ div.hrquestionsrow {
     height: 1px; /* высота / толщина линии */
     background: #d1d1d1; /* фон / цвет линии */
     border: 0; /* рамка вокруг разделительной линии (уберем ее) */
-    margin-bottom: 3%;
 }
 
 div.hrcomparerow {
     width: 80%;
-    margin: 3% 10%;
+    margin: 0% 7%;
 }
 
 p.comparehead {
     color: var(--doc-color);
+    grid-column: span 2;
 }
 
 p.compare,
@@ -528,24 +511,36 @@ i.compare {
     color: #1e2023;
 }
 
-p.ourselves {
-    font-family: KanitCyrillic;
-    font-size: 1em;
-    color: black;
+div.ourselves{
     background-color: var(--footer-back);
     border: 0;
     border-radius: 2rem;
-    padding: 5% 10%;
+    padding: 1em 1.25em;
+    align-self: center;
+}
+
+p.ourselves {
+    font-family: KanitCyrillic;
+    font-size: 1.25em;
+    color: black;
+}
+
+div.withus {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-blue);
+    border: 0;
+    border-radius: 2rem;
+    padding: 1em 1.25em;
+    align-self: center;
+    gap: .5em;
 }
 
 i.withus {
     font-family: KanitCyrillic;
-    font-size: 1em;
+    font-size: 1.25em;
     color: var(--white);
-    background-color: var(--bg-blue);
-    border: 0;
-    border-radius: 2rem;
-    padding: 5% 10%;
+    font-weight: 900;
 }
 
 i.SmartArenda {
@@ -556,11 +551,12 @@ i.SmartArenda {
     border: 0;
     border-radius: 1rem;
     text-align: center;
+    align-self: center;
     padding: .5em;
 }
 
 article.reliable {
-    padding: 3em 5%;
+    padding: 4em 7%;
     background-color: var(--bg-blue);
     display: flex;
     flex-direction: column;
@@ -569,10 +565,7 @@ article.reliable {
     text-align: center;
     border: 0;
     border-radius: 2rem;
-}
-
-article.reliable > * {
-    margin: 2% 5%;
+    gap: 1.5em;
 }
 
 div.reliable,
@@ -595,7 +588,7 @@ h1.start {
 p.reliable,
 p.start {
     font-family: Roboto;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 input.reliablephone,
@@ -638,16 +631,14 @@ article.questions {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 3em 7%;
-}
-
-article.questions > * {
-    margin: 2% 0;
+    padding: 4em 7%;
+    gap: 1em;
 }
 
 div.questions {
     display: grid;
     grid-template-rows: auto;
+    gap: 1em;
 }
 
 div.questionsrow,
@@ -674,7 +665,6 @@ div.q-7 {
 div.questionsrow {
     display: grid;
     grid-template-columns: 1fr 10%;
-    margin-bottom: 3%;
     gap: 1em;
     align-items: center;
     justify-content: space-between;
@@ -707,12 +697,11 @@ div.q-6,
 div.q-7 {
     display: none;
     color: var(--doc-color);
-    margin-bottom: 5%;
     font-family: Roboto;
 }
 
 article.start {
-    padding: 3em 5%;
+    padding: 4em 7%;
     background-color: var(--bg-blue);
     display: flex;
     flex-direction: column;
@@ -721,10 +710,7 @@ article.start {
     text-align: center;
     border: 0;
     border-radius: 2rem;
-}
-
-article.start > * {
-    margin: 2% 5%;
+    gap: 1.5em;
 }
 
 article.documents {
@@ -732,11 +718,8 @@ article.documents {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 3em 5%;
-}
-
-article.documents > * {
-    margin: 2% 5%;
+    padding: 4em 7%;
+    gap: 2em;
 }
 
 div.documents {
@@ -762,7 +745,7 @@ a.documents {
 
 article.footer {
     background-color: var(--footer-back);
-    padding: 3em 5%;
+    padding: 4em 7%;
 }
 
 h1.footer {
