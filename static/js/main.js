@@ -49,7 +49,7 @@ const landlordname = document.querySelector('.landlordname');
 const landlordphone = document.querySelector('.landlordphone');
 
 landlordname.IMask = IMask(landlordname, {
-        mask: /^[a-zA-Z -]+$/
+        mask: /^[а-яА-Я -]+$/
 });
 
 

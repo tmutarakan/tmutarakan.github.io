@@ -78,8 +78,9 @@ a {
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    background-color: rgba(0,0,0,0)
-} 
+    background-color: rgba(0,0,0,0);
+    display: flex;
+}
 
 .hamburger {
     filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(302deg) brightness(103%) contrast(101%);
@@ -418,6 +419,10 @@ div.cost > * {
     margin-top: 3%;
 }
 
+h1.cost {
+    margin-bottom: 5%;
+}
+
 h2.cost, p.cost {
     font-family: Roboto;
 }
@@ -430,7 +435,8 @@ i.cost {
 
 div.costcheckmark {
     display: grid;
-    grid-template-columns: 10vw 1fr;
+    grid-template-columns: 1.5em 1fr;
+    align-items: end;
 }
 
 i.costcheckmark {
@@ -442,6 +448,11 @@ i.costcheckmark {
     line-height: 1.25em;
     text-align: center;
     border-radius: 50%;
+}
+
+img.costcheckmark {
+    width: 1em;
+    height: 1em;
 }
 
 div.costimg {
