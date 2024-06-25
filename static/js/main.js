@@ -7,27 +7,6 @@ button_reliable.onclick = phoneOpen;
 button_start = document.querySelector('button.start')
 button_start.onclick = phoneOpen;
 
-document.querySelector('.submityourapplication').onclick = sectionOpen;
-document.querySelector('.buttonlandlordclose').onclick = sectionClose;
-
-document.querySelector('.buttonlandlordsuccessclose').onclick = sectionClose;
-
-document.querySelector('.buttonexpectacallclose').onclick = sectionClose;
-
-document.querySelector('.buttonstartacallclose').onclick = sectionClose;
-
-document.querySelector('.buttonhamburger').onclick = sectionOpen;
-document.querySelector('.buttonhamburgerclose').onclick = sectionClose;
-
-document.querySelector('a.a-header').onclick = sectionClose;
-document.querySelector('a.a-works').onclick = sectionClose;
-document.querySelector('a.a-nearby').onclick = sectionClose;
-document.querySelector('a.a-cost').onclick = sectionClose;
-document.querySelector('a.a-compare').onclick = sectionClose;
-document.querySelector('a.a-questions').onclick = sectionClose;
-document.querySelector('a.a-documents').onclick = sectionClose;
-
-
 const checkbox = document.querySelector('.headercheckbox');
 
 const activeButtonBackColor = '#ff8400';
@@ -56,7 +35,7 @@ landlordname.IMask = IMask(landlordname, {
 function validate_phone() {
     btn = document.querySelector(`button.${this.name}`)
     if (!this.IMask.masked.isComplete) {
-        this.setCustomValidity('Некорректно введённый номер');
+        //this.setCustomValidity('Некорректно введённый номер');
         this.reportValidity();
         btn.setAttribute('disabled', true);
     } else {
@@ -69,11 +48,11 @@ function validate_phone() {
 function validate_landlord() {
     btn = document.querySelector(`button.${this.name}`)
     if (landlordname.value.length == 0 || !landlordphone.IMask.masked.isComplete) {
-        if (this.classList[1] == 'landlordphone'){
+        /*if (this.classList[1] == 'landlordphone'){
             this.setCustomValidity('Некорректно введённый номер');
         } else {
             this.setCustomValidity('Некорректно введенно ФИО');
-        }
+        }*/
         this.reportValidity();
         btn.setAttribute('disabled', true);
     } else {
@@ -98,19 +77,6 @@ function setEventListener(element, type, handler) {
     }
 }
 
-function sectionOpen() {
-    main = document.querySelector('.main');
-    section = document.querySelector(this.name);
-    main.style.display = 'none';
-    section.style.display = 'flex';
-}
-
-function sectionClose() {
-    main = document.querySelector('.main');
-    section = document.querySelector(this.name);
-    main.style.display = 'flex';
-    section.style.display = 'none';
-}
 
 function phoneOpen() {
     main = document.querySelector('.main');

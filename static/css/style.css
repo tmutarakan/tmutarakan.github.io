@@ -66,21 +66,6 @@ a {
     font-family: KanitCyrillic;
 }
 
-.buttonhamburger,
-.buttonhamburgerclose,
-.buttonlandlordclose,
-.buttonlandlordsuccessclose,
-.buttonexpectacallclose,
-.buttonstartacallclose {
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    background-color: rgba(0,0,0,0);
-    display: flex;
-}
-
 .hamburger {
     filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(302deg) brightness(103%) contrast(101%);
 }
@@ -212,78 +197,6 @@ a.menucontent {
     font-size: 2em;
     text-align: center;
     color: var(--article-header);
-}
-
-article.landlordregistration,
-article.landlordregistrationsuccess,
-article.expectacall,
-article.startacall {
-    min-height: 100vh;
-    padding: 0 7%;
-    color: black;
-    background-color: var(--menu-back);
-    background-size: cover;
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    justify-content: stretch;
-}
-
-div.landlordcontent,
-div.landlordregistrationsuccess,
-div.expectacall,
-div.startacall {
-    flex: 1;
-    gap: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-div.landlordregistrationsuccess,
-div.expectacall,
-div.startacall {
-    align-items: center;
-}
-
-form.landlordcontent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-form.landlordcontent > * {
-    margin: 5%;
-}
-
-p.landlordcontent {
-    font-family: KanitCyrillic;
-    font-size: 2em;
-    text-align: center;
-}
-
-input.landlordcontent {
-    font-family: Roboto;
-    color: var(--doc-color);
-    background-color: #e8e8e8;
-    border-style: solid;
-    display: inline-block;
-    padding: 0.5rem 1.25rem;
-    border-radius: 10rem;
-}
-
-img.landlordregistrationsuccess,
-img.expectacall,
-img.startacall {
-    width: 50%;
-}
-
-p.landlordregistrationsuccess,
-p.expectacall,
-p.startacall {
-    font-family: Roboto;
-    font-size: 1.5em;
-    color: var(--success-color);
 }
 
 article.works {
