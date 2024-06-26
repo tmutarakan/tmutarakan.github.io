@@ -47,7 +47,7 @@ a {
 }
 
 .head {
-    margin: 15% 0;
+    margin: 15% 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -396,15 +396,11 @@ div.comparerowus {
 div.hrcomparerow,
 div.hrquestionsrow {
     display: block;
-    width: 100%; /* ширина линии */
+    width: 80%;
+    margin: 0% 7%;
     height: 1px; /* высота / толщина линии */
     background: #d1d1d1; /* фон / цвет линии */
     border: 0; /* рамка вокруг разделительной линии (уберем ее) */
-}
-
-div.hrcomparerow {
-    width: 80%;
-    margin: 0% 7%;
 }
 
 p.comparehead {
@@ -510,6 +506,7 @@ input.startphone {
     font-family: Roboto;
     border: 0;
     width: auto;
+    text-align: center;
 }
 
 input:focus {
@@ -533,19 +530,25 @@ button.start {
     font-family: Roboto;
 }
 
+/*
 button.reliable:disabled,
 button.start:disabled {
     color: var(--disabled-btn-color);
     background-color: var(--disabled-btn-back);
 }
+*/
 
 article.questions {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 4em 7%;
+    padding: 4em 0;
     gap: 1em;
+}
+
+h1.questions {
+    padding: 0 7%;
 }
 
 div.questions {
@@ -562,7 +565,7 @@ div.q-4,
 div.q-5,
 div.q-6,
 div.q-7 {
-    padding: 5%;
+    padding: 5% 7%;
 }
 
 div.q-1,
@@ -658,7 +661,7 @@ a.documents {
 
 article.footer {
     background-color: var(--footer-back);
-    padding: 4em 7%;
+    padding: 2em 7%;
 }
 
 h1.footer {

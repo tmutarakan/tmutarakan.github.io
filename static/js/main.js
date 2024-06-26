@@ -19,7 +19,7 @@ const noactiveButtonColor = '#b4b4b4';
 document.querySelectorAll('[type="tel"]').forEach(function(element) {
     element.required = true;
     element.IMask = IMask(element, {
-        mask: '+{7}(900)000-00-00'
+        mask: '+{7}(000)000-00-00'
     });
 });
 
