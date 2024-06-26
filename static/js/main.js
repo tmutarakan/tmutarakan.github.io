@@ -1,12 +1,4 @@
-submit_landlordcontent = document.querySelector('.submitlandlordcontent')
-submit_landlordcontent.onclick = landlordregistrationsuccessOpen;
-
-button_reliable = document.querySelector('button.reliable');
-button_reliable.onclick = phoneOpen;
-
-button_start = document.querySelector('button.start')
-button_start.onclick = phoneOpen;
-
+document.querySelector('.submitlandlordcontent').onclick = landlordregistrationsuccessOpen;
 const checkbox = document.querySelector('.headercheckbox');
 
 const activeButtonBackColor = '#ff8400';
@@ -35,7 +27,6 @@ landlordname.IMask = IMask(landlordname, {
 function validate_phone() {
     btn = document.querySelector(`button.${this.name}`)
     if (!this.IMask.masked.isComplete) {
-        //this.setCustomValidity('Некорректно введённый номер');
         this.reportValidity();
         btn.setAttribute('disabled', true);
     } else {
@@ -48,11 +39,6 @@ function validate_phone() {
 function validate_landlord() {
     btn = document.querySelector(`button.${this.name}`)
     if (landlordname.value.length == 0 || !landlordphone.IMask.masked.isComplete) {
-        /*if (this.classList[1] == 'landlordphone'){
-            this.setCustomValidity('Некорректно введённый номер');
-        } else {
-            this.setCustomValidity('Некорректно введенно ФИО');
-        }*/
         this.reportValidity();
         btn.setAttribute('disabled', true);
     } else {
@@ -78,48 +64,6 @@ function setEventListener(element, type, handler) {
 }
 
 
-function phoneOpen() {
-    main = document.querySelector('.main');
-    section = document.querySelector(this.name);
-    main.style.display = 'none';
-    section.style.display = 'flex';
-
-    const url = document.URL;
-    const div = document.querySelector(`div.${this.className}`);
-    const phone = div.querySelector('input').value;
-    const user = {
-        "name": '',
-        "phone": phone,
-    };
-
-    axios.post(url, user)
-        .then(response => console.log(response.data))
-        .catch(error => console.log(error));
-}
-
-
-function landlordregistrationsuccessOpen() {
-    curr = document.querySelector('.landlordregistration');
-    menu = document.querySelector('.landlordregistrationsuccess');
-    curr.style.display = 'none';
-    menu.style.display = 'flex';
-
-    const url = document.URL;
-    const name = document.querySelector('.landlordname').value;
-    const phone = document.querySelector('.landlordphone').value;
-    console.log(name);
-    console.log(phone);
-    const user = {
-        "name": name,
-        "phone": phone,
-    };
-
-    axios.post(url, user)
-        .then(response => console.log(response.data))
-        .catch(error => console.log(error));
-}
-
-
 setEventListener(checkbox, 'change', function() {
     button = document.querySelector('.submityourapplication')
     if (this.checked) {
@@ -135,3 +79,26 @@ setEventListener(checkbox, 'change', function() {
         button.setAttribute('disabled', true);
     }
 });
+
+function landlordregistrationsuccessOpen() {
+    /*sessionStorage.setItem('scrollPos', window.scrollY);*/
+    curr = document.querySelector('.landlordregistration');
+    menu = document.querySelector('.landlordregistrationsuccess');
+    curr.style.display = 'none';
+    menu.style.display = 'flex';
+    /*document.documentElement.scrollIntoView(true);*/
+
+    const url = document.URL;
+    const name = document.querySelector('.landlordname').value;
+    const phone = document.querySelector('.landlordphone').value;
+    console.log(name);
+    console.log(phone);
+    const user = {
+        "name": name,
+        "phone": phone,
+    };
+
+    axios.post(url, user)
+        .then(response => console.log(response.data))
+        .catch(error => console.log(error));
+}

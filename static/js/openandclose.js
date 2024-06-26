@@ -30,8 +30,12 @@ document.querySelector('a.a-compare').onclick = sectionClose;
 document.querySelector('a.a-questions').onclick = sectionClose;
 document.querySelector('a.a-documents').onclick = sectionClose;
 
+document.querySelector('button.reliable').onclick = phoneOpen;
+document.querySelector('button.start').onclick = phoneOpen;
+
 
 function sectionOpen() {
+    sessionStorage.setItem('scrollPos', window.scrollY);
     main = document.querySelector('.main');
     section = document.querySelector(this.name);
     main.style.display = 'none';
@@ -44,5 +48,27 @@ function sectionClose() {
     section = document.querySelector(this.name);
     main.style.display = 'flex';
     section.style.display = 'none';
-    window.location.hash = "#" + this.getAttribute('anchor_hash');
+    window.scrollTo(0, sessionStorage.getItem('scrollPos') || 0);
 }
+
+function phoneOpen() {
+    sessionStorage.setItem('scrollPos', window.scrollY);
+    main = document.querySelector('.main');
+    section = document.querySelector(this.name);
+    main.style.display = 'none';
+    section.style.display = 'flex';
+    document.documentElement.scrollIntoView(true);
+
+    const url = document.URL;
+    const div = document.querySelector(`div.${this.className}`);
+    const phone = div.querySelector('input').value;
+    const user = {
+        "name": '',
+        "phone": phone,
+    };
+
+    axios.post(url, user)
+        .then(response => console.log(response.data))
+        .catch(error => console.log(error));
+}
+
