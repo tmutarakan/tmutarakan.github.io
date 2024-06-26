@@ -88,7 +88,7 @@
             площадках. Оплата сервиса от 20%, так что откликов будет достаточно.
           </p>
         </div>
-        <div class="work">
+        <div id="checktenants" class="work">
           <div class="workcircle">
             <p class="workcircle">3</p>
           </div>
@@ -101,7 +101,7 @@
             О проверке жильцов >
           </button>
         </div>
-        <div class="work">
+        <div id="aboutcontract" class="work">
           <div class="workcircle">
             <p class="workcircle">4</p>
           </div>
@@ -351,7 +351,7 @@
           </div>
         </div>
       </article>
-      <article class="reliable">
+      <article id="reliable" class="reliable">
         <div class="reliablehead">
           <h1 class="reliable headmenu">Ищете<br />надежных<br />жильцов?</h1>
         </div>
@@ -484,7 +484,7 @@
           </div>
         </div>
       </article>
-      <article class="start">
+      <article id="start" class="start">
         <h1 class="start headmenu">Начнем<br />искать<br />жильцов?</h1>
         <p class="start">Оставьте заявку -<br />мы все расскажем</p>
         <div class="start">
@@ -545,7 +545,7 @@
           >
         </div>
       </article>
-      <article class="footer">
+      <article id="footer" class="footer">
         <h1 class="footer headmenu">SmartArenda 2024</h1>
       </article>
     </section>
@@ -553,7 +553,7 @@
       <article class="menu">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="buttonhamburgerclose" name="article.menu">
+          <button class="buttonhamburgerclose" name="article.menu" anchor_hash="header">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2.5em"
@@ -599,7 +599,7 @@
       <article class="landlordregistration">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="buttonlandlordclose" name=".landlordregistration">
+          <button class="buttonlandlordclose" name=".landlordregistration" anchor_hash="header">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2.5em"
@@ -641,6 +641,7 @@
           <button
             class="buttonlandlordsuccessclose"
             name=".landlordregistrationsuccess"
+            anchor_hash="header"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -670,7 +671,7 @@
       <article class="expectacall">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="buttonexpectacallclose" name="article.expectacall">
+          <button class="buttonexpectacallclose" name="article.expectacall"  anchor_hash="reliable">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -693,7 +694,7 @@
       <article class="startacall">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="buttonstartacallclose" name="article.startacall">
+          <button class="buttonstartacallclose" name="article.startacall" anchor_hash="start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -716,7 +717,7 @@
       <article class="checktenants">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="checktenantsclose" name="article.checktenants">
+          <button class="checktenantsclose" name="article.checktenants" anchor_hash="checktenants">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -747,17 +748,19 @@
               Мы предлагаем проверенных жильцов на основе требований от
               собственника. Это может быть:
             </p>
-            <p class="checktenants">- состав семьи;</p>
-            <p class="checktenants">- возраст;</p>
-            <p class="checktenants">- наличие животных;</p>
-            <p class="checktenants">- иные положения.</p>
+            <ul>
+              <li class="checktenants">состав семьи;</li>
+              <li class="checktenants">возраст;</li>
+              <li class="checktenants">наличие животных;</li>
+              <li class="checktenants">иные положения.</li>
+            </ul>
           </div>
         </div>
       </article>
       <article class="aboutcontract">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="aboutcontractclose" name="article.aboutcontract">
+          <button class="aboutcontractclose" name="article.aboutcontract" anchor_hash="aboutcontract">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -780,16 +783,16 @@
               существенные условия, предъявляемые к подобным договорам. В нём
               указываются:
             </p>
-            <p class="aboutcontract">- объект аренды;</p>
-            <p class="aboutcontract">- срок аренды;:</p>
-            <p class="aboutcontract">
-              - размер арендной платы и порядок расчетов;
-            </p>
-            <p class="aboutcontract">- порядок оплаты коммунальных платежей;</p>
-            <p class="aboutcontract">- права и обязанности сторон;</p>
-            <p class="aboutcontract">
-              - порядок изменения, расторжения и иные условия.
-            </p>
+            <ul>
+              <li class="aboutcontract">объект аренды;</li>
+              <li class="aboutcontract">срок аренды;:</li>
+              <li class="aboutcontract">размер арендной платы и порядок расчетов;</li>
+            </ul>
+            <ul>
+              <li class="aboutcontract">порядок оплаты коммунальных платежей;</li>
+              <li class="aboutcontract">права и обязанности сторон;</li>
+              <li class="aboutcontract">порядок изменения, расторжения и иные условия.</li>
+            </ul>
             <p class="aboutcontract">
               Договор заключается сторонами в письменном виде с использованием
               сервиса, подписывается простой электронной подписью. Она
@@ -808,7 +811,7 @@
       <article class="aboutinsurance">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="aboutinsuranceclose" name="article.aboutinsurance">
+          <button class="aboutinsuranceclose" name="article.aboutinsurance" anchor_hash="nearby">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -827,51 +830,69 @@
           <h3 class="aboutinsurance">О страховке</h3>
           <div class="aboutinsurancecontent">
             <p class="aboutinsurance">От чего застрахована квартира?</p>
-            <p class="aboutinsurance">	Залив;</p>
-            <p class="aboutinsurance">	пожар, взрыв;</p>
-            <p class="aboutinsurance">	противоправные действия третьих лиц;</p>
-            <p class="aboutinsurance">	стихийные бедствия;</p>
-            <p class="aboutinsurance">	падение летательных аппаратов и их частей;</p>
-            <p class="aboutinsurance">	механическое воздействие **;</p>
-            <p class="aboutinsurance">	причинение вреда жизни, здоровью и/или имуществу третьих лиц;</p>
-            <p class="aboutinsurance">	чрезвычайная ситуация ***;</p>
-            <p class="aboutinsurance">	удар молнии;</p>
-            <p class="aboutinsurance">	падение посторонних предметов.</p>
+            <ul>
+              <li class="aboutinsurance">Залив;</li>
+              <li class="aboutinsurance">пожар, взрыв;</li>
+              <li class="aboutinsurance">противоправные действия третьих лиц;</li>
+              <li class="aboutinsurance">стихийные бедствия;</li>
+              <li class="aboutinsurance">падение летательных аппаратов и их частей;</li>
+              <li class="aboutinsurance">механическое воздействие **;</li>
+              <li class="aboutinsurance">причинение вреда жизни, здоровью и/или имуществу третьих лиц;</li>
+              <li class="aboutinsurance">чрезвычайная ситуация ***;</li>
+              <li class="aboutinsurance">удар молнии;</li>
+              <li class="aboutinsurance">падение посторонних предметов.</li>
+            </ul>
             <p class="aboutinsurance">Подлежит страхованию на 300 000 рублей: </p>
-            <p class="aboutinsurance">Внутренняя отделка и инженерное оборудование:</p>
-            <p class="aboutinsurance">слой отделочных материалов, нанесенных или прикрепленных к поверхности пола, потолка и стен;</p>
-            <p class="aboutinsurance">	сантехническое и инженерное оборудование;</p>
-            <p class="aboutinsurance">	дверные и оконные блоки (включая остекление);</p>
-            <p class="aboutinsurance">	полы (исключая межэтажные перекрытия);</p>
-            <p class="aboutinsurance">	легкие внутренние перегородки (из гипсокартона, ДСП, ДВП и т.п.);</p>
-            <p class="aboutinsurance">	электропроводка, электрические счетчики, электроустановочные и иные аналогичные изделия.</p>
-            <p class="aboutinsurance">Внешняя отделка:</p>
-            <p class="aboutinsurance">	выполненные из различных материалов декоративные элементы, закреплённые на внешней поверхности наружных стен (за исключением самих стен) и связанные с ними;</p>
-            <p class="aboutinsurance">	нанесённый или прикреплённый к поверхности наружных стен с внешней стороны слой отделочных материалов.</p>
+            <ul>
+              <li class="aboutinsurance">Внутренняя отделка и инженерное оборудование:
+                <ul>
+                  <li class="aboutinsurance">слой отделочных материалов, нанесенных или прикрепленных к поверхности пола, потолка и стен;</li>
+                  <li class="aboutinsurance">сантехническое и инженерное оборудование;</li>
+                  <li class="aboutinsurance">дверные и оконные блоки (включая остекление);</li>
+                  <li class="aboutinsurance">полы (исключая межэтажные перекрытия);</li>
+                  <li class="aboutinsurance">легкие внутренние перегородки (из гипсокартона, ДСП, ДВП и т.п.);</li>
+                  <li class="aboutinsurance">электропроводка, электрические счетчики, электроустановочные и иные аналогичные изделия.</li>
+                </ul>
+              </li>
+              <li class="aboutinsurance">Внешняя отделка:
+                <ul>
+                  <li class="aboutinsurance">выполненные из различных материалов декоративные элементы, закреплённые на внешней поверхности наружных стен (за исключением самих стен) и связанные с ними;</li>
+                  <li class="aboutinsurance">нанесённый или прикреплённый к поверхности наружных стен с внешней стороны слой отделочных материалов.</li>
+                </ul>
+              </li>
+            </ul>
             <p class="aboutinsurance">Подлежит страхованию на 300 000 рублей:</p>
-            <p class="aboutinsurance">Конструктивные элементы квартир:</p>
-            <p class="aboutinsurance">	несущие и ненесущие стены;</p>
-            <p class="aboutinsurance">	перекрытия;</p>
-            <p class="aboutinsurance">	перегородки.</p>
+            <ul>
+              <li class="aboutinsurance">Конструктивные элементы квартир:
+                <ul>
+                  <li class="aboutinsurance">несущие и ненесущие стены;</li>
+                  <li class="aboutinsurance">перекрытия;</li>
+                  <li class="aboutinsurance">перегородки.</li>
+                </ul>
+              </li>
+            </ul>
             <p class="aboutinsurance">Страхованию подлежит на 100 000 рублей:</p>
-            <p class="aboutinsurance">Движимое имущество:</p>
-            <p class="aboutinsurance">	теле- и аудиоаппаратура;</p>
-            <p class="aboutinsurance">	мебель (встроенная, корпусная);</p>
-            <p class="aboutinsurance">	бытовая техника;</p>
-            <p class="aboutinsurance">	вычислительная техника;</p>
-            <p class="aboutinsurance">	оргтехника;</p>
-            <p class="aboutinsurance">	периферийные устройства;</p>
-            <p class="aboutinsurance">	средства городской телефонной связи;</p>
-            <p class="aboutinsurance">	одежда и обувь;</p>
-            <p class="aboutinsurance">	спортивно-туристический инвентарь;</p>
-            <p class="aboutinsurance">	постельные принадлежности;</p>
-            <p class="aboutinsurance">	предметы интерьера;</p>
-            <p class="aboutinsurance">	личные вещи;</p>
-            <p class="aboutinsurance">	детские коляски и игрушки.</p>
+              <ul class="aboutinsurance">Движимое имущество:
+                <li class="aboutinsurance">теле- и аудиоаппаратура;</li>
+                <li class="aboutinsurance">мебель (встроенная, корпусная);</li>
+                <li class="aboutinsurance">бытовая техника;</li>
+                <li class="aboutinsurance">вычислительная техника;</li>
+                <li class="aboutinsurance">оргтехника;</li>
+                <li class="aboutinsurance">периферийные устройства;</li>
+                <li class="aboutinsurance">средства городской телефонной связи;</li>
+                <li class="aboutinsurance">одежда и обувь;</li>
+                <li class="aboutinsurance">спортивно-туристический инвентарь;</li>
+                <li class="aboutinsurance">постельные принадлежности;</li>
+                <li class="aboutinsurance">предметы интерьера;</li>
+                <li class="aboutinsurance">личные вещи;</li>
+                <li class="aboutinsurance">детские коляски и игрушки.</li>
+              </ul>
+            </ul>
             <p class="aboutinsurance">Подлежит страхованию на 200 000 рублей:</p>
-            <p class="aboutinsurance">Гражданская ответственность перед соседями:</p>
-            <p class="aboutinsurance">	в случае причинения вреда имуществу третьих лиц (например, залив соседей);</p>
-            <p class="aboutinsurance">	в случае причинения вреда здоровью третьих лиц (например, при пожаре или взрыве газа).</p>
+              <ul class="aboutinsurance">Гражданская ответственность перед соседями:
+                <li class="aboutinsurance">в случае причинения вреда имуществу третьих лиц (например, залив соседей);</li>
+                <li class="aboutinsurance">в случае причинения вреда здоровью третьих лиц (например, при пожаре или взрыве газа).</li>
+              </ul>
             <p class="aboutinsurance">Компенсация ремонта крупной бытовой техники.</p>
             <p class="aboutinsurance">Вернём 85% стоимости ремонта холодильников, печей, стиральных и посудомоечных машин не старше 6 лет.</p>
             <p class="aboutinsurance">Если техника внезапно перестала работать, например, из-за скачка напряжения в сети или короткого замыкания.</p>
@@ -879,10 +900,11 @@
             <p class="aboutinsurance">В авторизованных сервисных центрах.</p>
             <p class="aboutinsurance">В неавторизованных тоже можно, но нужно будет предварительно согласовать это со страховой компанией по номеру 900.</p>
             <p class="aboutinsurance">Какая техника считается</p>
-            <p class="aboutinsurance">Крупная техника не старше 6 лет:</p>
-            <p class="aboutinsurance">— холодильники и морозильники,</p>
-            <p class="aboutinsurance">— электрические и газовые плиты, духовые шкафы, варочные панели,</p>
-            <p class="aboutinsurance">— посудомоечные, стиральные и сушильные машины.</p>
+            <ul class="aboutinsurance">Крупная техника не старше 6 лет:
+              <li class="aboutinsurance">— холодильники и морозильники,</li>
+              <li class="aboutinsurance">— электрические и газовые плиты, духовые шкафы, варочные панели,</li>
+              <li class="aboutinsurance">— посудомоечные, стиральные и сушильные машины.</li>
+            </ul>
             <p class="aboutinsurance">Мы не компенсируем ремонт, если он потребовался из-за естественного износа, неправильного использования техники и всего, что можно починить по гарантии.</p>
           </div>
         </div>
@@ -890,7 +912,7 @@
       <article class="aboutverification">
         <div class="menuhead">
           <i class="companyname">SmartArenda</i>
-          <button class="aboutverificationclose" name="article.aboutverification">
+          <button class="aboutverificationclose" name="article.aboutverification" anchor_hash="nearby">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

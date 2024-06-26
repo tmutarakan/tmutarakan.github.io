@@ -1,3 +1,8 @@
+ul {
+    padding-left: 1em;
+    font-family: Roboto;
+}
+
 article.landlordregistration,
 article.landlordregistrationsuccess,
 article.expectacall,
@@ -8,7 +13,7 @@ article.aboutinsurance,
 article.aboutverification {
     min-height: 100vh;
     padding: 0 7%;
-    color: black;
+    color: var(--article-header);
     background-color: var(--menu-back);
     background-size: cover;
     text-align: center;
@@ -84,7 +89,7 @@ h3.aboutverification {
 div.checktenantscontent,
 div.aboutcontractcontent,
 div.aboutinsurancecontent,
-div.aboutverification {
+div.aboutverificationcontent {
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -92,10 +97,29 @@ div.aboutverification {
 }
 
 p.checktenants,
+li.checktenants,
 p.aboutcontract,
+li.aboutcontract,
 p.aboutinsurance,
-p.aboutverification {
+li.aboutinsurance,
+p.aboutverification,
+li.aboutverification {
     font-family: Roboto;
+}
+
+li.checktenants,
+li.aboutcontract {
+    list-style-type: none;
+}
+
+li.aboutinsurance {
+    list-style-position: inside;
+}
+
+li.checktenants:before,
+li.aboutcontract:before {
+    content: "- "; /* Добавляем в качестве маркера символ */
+    font-weight: 900;
 }
 
 button.checktenants,

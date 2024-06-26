@@ -36,6 +36,7 @@ function sectionOpen() {
     section = document.querySelector(this.name);
     main.style.display = 'none';
     section.style.display = 'flex';
+    document.documentElement.scrollIntoView(true);
 }
 
 function sectionClose() {
@@ -43,4 +44,5 @@ function sectionClose() {
     section = document.querySelector(this.name);
     main.style.display = 'flex';
     section.style.display = 'none';
+    window.location.hash = "#" + this.getAttribute('anchor_hash');
 }

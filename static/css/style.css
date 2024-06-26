@@ -396,7 +396,6 @@ div.comparerowus {
 div.hrcomparerow,
 div.hrquestionsrow {
     display: block;
-    width: 80%;
     margin: 0% 7%;
     height: 1px; /* высота / толщина линии */
     background: #d1d1d1; /* фон / цвет линии */
