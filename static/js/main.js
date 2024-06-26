@@ -1,4 +1,3 @@
-document.querySelector('.submitlandlordcontent').onclick = landlordregistrationsuccessOpen;
 const checkbox = document.querySelector('.headercheckbox');
 
 const activeButtonBackColor = '#ff8400';
@@ -79,26 +78,3 @@ setEventListener(checkbox, 'change', function() {
         button.setAttribute('disabled', true);
     }
 });
-
-function landlordregistrationsuccessOpen() {
-    /*sessionStorage.setItem('scrollPos', window.scrollY);*/
-    curr = document.querySelector('.landlordregistration');
-    menu = document.querySelector('.landlordregistrationsuccess');
-    curr.style.display = 'none';
-    menu.style.display = 'flex';
-    /*document.documentElement.scrollIntoView(true);*/
-
-    const url = document.URL;
-    const name = document.querySelector('.landlordname').value;
-    const phone = document.querySelector('.landlordphone').value;
-    console.log(name);
-    console.log(phone);
-    const user = {
-        "name": name,
-        "phone": phone,
-    };
-
-    axios.post(url, user)
-        .then(response => console.log(response.data))
-        .catch(error => console.log(error));
-}
