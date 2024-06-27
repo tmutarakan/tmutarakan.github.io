@@ -44,6 +44,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    gap: 1em;
 }
 
 .head {
@@ -55,7 +56,7 @@ a {
 }
 
 .headercontent {
-    margin: auto 0;
+    margin: auto 0 1em;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
