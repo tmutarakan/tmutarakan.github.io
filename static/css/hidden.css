@@ -5,7 +5,7 @@ section.hidden {
 ul {
     padding-left: 1rem;
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 article.landlordregistration,
@@ -30,12 +30,18 @@ article.aboutverification {
 div.landlordcontent,
 div.landlordregistrationsuccess,
 div.expectacall,
+div.startacall{
+    flex: 1;
+}
+
+div.landlordcontent,
+div.landlordregistrationsuccess,
+div.expectacall,
 div.startacall,
 div.checktenants,
 div.aboutcontract,
 div.aboutinsurance,
 div.aboutverification {
-    flex: 1;
     gap: 3rem;
     display: flex;
     flex-direction: column;
@@ -103,12 +109,12 @@ h3.aboutcontract,
 h3.aboutinsurance,
 h3.aboutverification {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 h4.aboutinsurance {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 p.landlordregistrationsuccess,
