@@ -47,7 +47,7 @@ a {
 }
 
 .head {
-    margin: 15% 0 0;
+    margin: 3rem 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,11 +58,11 @@ a {
     margin: auto 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
 .companyname {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-family: KanitCyrillic;
 }
 
@@ -75,13 +75,13 @@ a {
 }
 
 .helpyou {
-    font-size: 3em;
+    font-size: 3rem;
     font-family: KanitCyrillic;
     font-weight: bold;
 }
 
 .fastandsafely {
-    font-size: 1.75em;
+    font-size: 1.75rem;
     font-family: KanitCyrillic;
 }
 
@@ -95,7 +95,7 @@ a {
     display: inline-block;
     padding: 1.5rem 2.5rem;
     border-radius: 10rem;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: Roboto;
 }
 
@@ -114,13 +114,13 @@ a {
 }
 
 .useragreement {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     font-family: Roboto;
     color: var(--white);
 }
 
 a.useragreement {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .headercheckbox {
@@ -138,13 +138,13 @@ a.useragreement {
   .headercheckbox+label::before {
     content: '';
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1rem;
+    height: 1rem;
     flex-shrink: 0;
     flex-grow: 0;
     border: 1px solid #adb5bd;
-    border-radius: 0.25em;
-    margin-right: 0.5em;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
@@ -169,7 +169,7 @@ article.menu {
 }
 
 div.menuhead {
-    margin: 15% 0;
+    margin: 3rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -177,7 +177,7 @@ div.menuhead {
 }
 
 div.menucontent {
-    margin: 45% 15%;
+    margin: auto;
     display: flex;
     flex-direction: column;
 }
@@ -187,14 +187,14 @@ div.menucontent > * {
 }
 
 a.menucontent {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
 }
 
 .headmenu {
     font-family: KanitCyrillic;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
     color: var(--article-header);
 }
@@ -205,13 +205,13 @@ article.works {
     flex-direction: column;
     justify-content: stretch;
     text-align: center;
-    padding: 4em 7%;
-    gap: 0.5em;
+    padding: 4rem 7%;
+    gap: 0.5rem;
 }
 
 h1.workshead,
 h1.cost {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 
 div.work {
@@ -228,8 +228,8 @@ div.workcircle {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
     border-radius: 50%;
     border: 0;
@@ -237,7 +237,7 @@ div.workcircle {
     color: var(--white);
     font-family: KanitCyrillic;
     margin-bottom: 5%;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 h6.work,
@@ -248,17 +248,17 @@ a.work {
 }
 
 h6.work {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 article.nearby {
     min-height: 80vh;
-    padding: 4em 7%;
+    padding: 4rem 7%;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    gap: 3em;
+    gap: 3rem;
 }
 
 div.nearby-1 > *,
@@ -266,7 +266,7 @@ div.nearby-2 > *,
 div.nearby-3 > *,
 div.nearby-4 > *,
 div.nearby-5 > * {
-    padding: .75em 0%;
+    padding: .75rem 0%;
 }
 
 div.nearby-1,
@@ -314,9 +314,9 @@ article.cost {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 4em 7%;
+    padding: 4rem 7%;
     background-color: var(--footer-back);
-    gap: 1em;
+    gap: 1rem;
 }
 
 div.cost {
@@ -338,7 +338,7 @@ i.cost {
 
 div.costcheckmark {
     display: grid;
-    grid-template-columns: 1.5em 1fr;
+    grid-template-columns: 1.5rem 1fr;
     align-items: end;
 }
 
@@ -346,16 +346,16 @@ i.costcheckmark {
     background-color: var(--bg-blue);
     color: var(--white);
     border: 0;
-    width: 1.25em;
-    height: 1.25em;
-    line-height: 1.25em;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
     text-align: center;
     border-radius: 50%;
 }
 
 img.costcheckmark {
-    width: 1em;
-    height: 1em;
+    width: 1rem;
+    height: 1rem;
 }
 
 div.costimg {
@@ -372,14 +372,14 @@ article.compare {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 4em 0;
-    gap: 1em;
+    padding: 4rem 0;
+    gap: 1rem;
 }
 
 div.compare {
     display: grid;
     grid-template-rows: auto;
-    gap: 2em;
+    gap: 2rem;
 }
 
 div.comparerow {
@@ -411,7 +411,7 @@ p.compare,
 p.comparehead,
 i.compare {
     font-family: Roboto;
-    font-size: .875em;
+    font-size: .875rem;
 }
 
 p.compare,
@@ -423,13 +423,13 @@ div.ourselves{
     background-color: var(--footer-back);
     border: 0;
     border-radius: 2rem;
-    padding: 1em 1.25em;
+    padding: 1rem 1.25rem;
     align-self: center;
 }
 
 p.ourselves {
     font-family: KanitCyrillic;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: black;
 }
 
@@ -439,32 +439,32 @@ div.withus {
     background-color: var(--bg-blue);
     border: 0;
     border-radius: 2rem;
-    padding: 1em 1.25em;
+    padding: 1rem 1.25rem;
     align-self: center;
-    gap: .5em;
+    gap: .5rem;
 }
 
 i.withus {
     font-family: KanitCyrillic;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: var(--white);
     font-weight: 900;
 }
 
 i.SmartArenda {
     font-family: KanitCyrillic;
-    font-size: .5em;
+    font-size: .5rem;
     color: var(--white);
     background-color: #6090ff;
     border: 0;
     border-radius: 1rem;
     text-align: center;
     align-self: center;
-    padding: .5em;
+    padding: .5rem;
 }
 
 article.reliable {
-    padding: 4em 7%;
+    padding: 4rem 7%;
     background-color: var(--bg-blue);
     display: flex;
     flex-direction: column;
@@ -473,7 +473,7 @@ article.reliable {
     text-align: center;
     border: 0;
     border-radius: 2rem;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
 div.reliable,
@@ -490,13 +490,13 @@ div.start {
 h1.reliable,
 h1.start {
     color: var(--white);
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 p.reliable,
 p.start {
     font-family: Roboto;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 input.reliablephone,
@@ -524,26 +524,18 @@ button.start {
     display: inline-block;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     font-weight: bold;
     font-family: Roboto;
 }
-
-/*
-button.reliable:disabled,
-button.start:disabled {
-    color: var(--disabled-btn-color);
-    background-color: var(--disabled-btn-back);
-}
-*/
 
 article.questions {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 4em 0;
-    gap: 1em;
+    padding: 4rem 0;
+    gap: 1rem;
 }
 
 h1.questions {
@@ -553,7 +545,7 @@ h1.questions {
 div.questions {
     display: grid;
     grid-template-rows: auto;
-    gap: 1em;
+    gap: 1rem;
 }
 
 div.questionsrow,
@@ -580,7 +572,7 @@ div.q-7 {
 div.questionsrow {
     display: grid;
     grid-template-columns: 1fr 10%;
-    gap: 1em;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -591,8 +583,8 @@ p.questions {
 
 button.questions {
     display: flex;
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     border: 0;
     background-color: #d5d5d5;
@@ -616,7 +608,7 @@ div.q-7 {
 }
 
 article.start {
-    padding: 4em 7%;
+    padding: 4rem 7%;
     background-color: var(--bg-blue);
     display: flex;
     flex-direction: column;
@@ -625,7 +617,7 @@ article.start {
     text-align: center;
     border: 0;
     border-radius: 2rem;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
 article.documents {
@@ -633,15 +625,15 @@ article.documents {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 4em 7%;
-    gap: 2em;
+    padding: 4rem 7%;
+    gap: 2rem;
 }
 
 div.documents {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    gap: 1em;
+    gap: 1rem;
 }
 
 h1.documents,
@@ -650,17 +642,17 @@ a.documents{
 }
 
 h1.documents {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 a.documents {
     color: var(--doc-color);
     text-decoration: none;
-    font-size: .875em;
+    font-size: .875rem;
 }
 
 article.footer {
     background-color: var(--footer-back);
-    padding: 2em 7%;
+    padding: 2rem 7%;
 }
 
 h1.footer {
@@ -668,7 +660,7 @@ h1.footer {
     align-items: center;
     color: var(--footer-color);
     text-align: right;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-style: italic;
 }
 

@@ -1,3 +1,7 @@
+section.hidden {
+    max-width: 1080px;
+}
+
 ul {
     padding-left: 1rem;
     font-family: Roboto;
@@ -32,7 +36,7 @@ div.aboutcontract,
 div.aboutinsurance,
 div.aboutverification {
     flex: 1;
-    gap: 2rem;
+    gap: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +46,7 @@ div.checktenants,
 div.aboutcontract,
 div.aboutinsurance,
 div.aboutverification {
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 
 div.landlordregistrationsuccess,
