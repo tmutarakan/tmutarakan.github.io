@@ -9,7 +9,7 @@
     width: -webkit-fill-available;
     width: -moz-available;
 	font-family: Roboto;
-    color: var(--doc-color);
+    color: var(--article-header);
     background-color: #e8e8e8;
     border-style: solid;
     display: inline-block;
@@ -35,7 +35,7 @@
     color: red;
 }
 .placeholder-text strong.placeholderphone{
-    color: var(--doc-color);
+    color: var(--article-header);
 }
 
 .placeholder-box input:invalid + .placeholder-text {
