@@ -35,7 +35,7 @@ a {
 }
 
 .header {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 0 7%;
     color: var(--white);
     background-image: url(/static/img/ish.webp);
