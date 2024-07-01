@@ -16,6 +16,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Roboto;
 }
 
 .main {
@@ -29,7 +30,6 @@
 }
 
 a {
-    font-family: Roboto;
     text-decoration: none;
     color: var(--bg-blue);
 }
@@ -98,7 +98,6 @@ a {
     padding: 1.5rem 2.5rem;
     border-radius: 10rem;
     font-size: 1rem;
-    font-family: Roboto;
 }
 
 .submityourapplication {
@@ -125,7 +124,6 @@ div.useragreement {
 label.useragreement,
 a.useragreement {
     font-size: 0.7rem;
-    font-family: Roboto;
     color: var(--white);
 }
 
@@ -237,7 +235,6 @@ div.work {
 h6.work,
 p.work,
 a.work {
-    font-family: Roboto;
     padding-bottom: 2%;
 }
 
@@ -298,12 +295,6 @@ div.nearbyrow {
     margin: 1% 0;
 }
 
-h2.nearby,
-p.nearby,
-a.nearby{
-    font-family: Roboto;
-}
-
 article.cost {
     display: flex;
     flex-direction: column;
@@ -318,10 +309,6 @@ div.cost {
     padding: 5%;
     border: 0;
     border-radius: 1rem;
-}
-
-h2.cost, p.cost {
-    font-family: Roboto;
 }
 
 i.cost {
@@ -404,7 +391,6 @@ p.comparehead {
 p.compare,
 p.comparehead,
 i.compare {
-    font-family: Roboto;
     font-size: .875rem;
 }
 
@@ -489,14 +475,12 @@ h1.start {
 
 p.reliable,
 p.start {
-    font-family: Roboto;
     font-size: 1.25rem;
 }
 
 input.reliablephone,
 input.startphone {
     margin: 3%;
-    font-family: Roboto;
     border: 0;
     width: auto;
     text-align: center;
@@ -520,7 +504,6 @@ button.start {
     border-radius: 10rem;
     font-size: 0.75rem;
     font-weight: bold;
-    font-family: Roboto;
 }
 
 article.questions {
@@ -571,10 +554,6 @@ div.questionsrow {
     justify-content: space-between;
 }
 
-p.questions {
-    font-family: Roboto;
-}
-
 button.questions {
     display: flex;
     width: 2rem;
@@ -598,7 +577,6 @@ div.q-6,
 div.q-7 {
     display: none;
     color: var(--doc-color);
-    font-family: Roboto;
 }
 
 article.start {
@@ -628,11 +606,6 @@ div.documents {
     flex-direction: column;
     justify-content: stretch;
     gap: 1rem;
-}
-
-h1.documents,
-a.documents{
-    font-family: Roboto;
 }
 
 h1.documents {

@@ -1,0 +1,43 @@
+.placeholder-box {
+	display: block;	
+	position: relative;
+    width: 100%;
+    font-size: 0.8333rem;
+}
+
+.placeholder-box input {
+    width: -webkit-fill-available;
+    width: -moz-available;
+	font-family: Roboto;
+    color: var(--doc-color);
+    background-color: #e8e8e8;
+    border-style: solid;
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10rem;
+}
+
+.placeholder-text {    
+	display: none;
+	width: 100%; 
+	line-height: 2rem;
+	position: absolute;
+	left: 1rem;
+	top: 0.2rem;
+	bottom: 0;
+	color: var(--disabled-btn-color);
+	cursor: text;
+	user-select: none;
+    text-align: left;
+}
+
+.placeholder-text strong.placeholdername{
+    color: red;
+}
+.placeholder-text strong.placeholderphone{
+    color: var(--doc-color);
+}
+
+.placeholder-box input:invalid + .placeholder-text {
+	display: block;
+}
