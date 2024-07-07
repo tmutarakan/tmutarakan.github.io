@@ -10,6 +10,13 @@ ul {
     font-family: KanitCyrillic;
 }
 
+ul.aboutcontract {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
 article.landlordregistration,
 article.landlordregistrationsuccess,
 article.expectacall,
