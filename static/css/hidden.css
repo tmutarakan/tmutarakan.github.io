@@ -8,13 +8,14 @@ ul {
     padding-left: 1rem;
     font-size: 1.125rem;
     font-family: KanitCyrillic;
-}
-
-ul.aboutcontract {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: .5rem;
+}
+
+ul.aboutinsurance {
+    padding-top: .5rem;
 }
 
 article.landlordregistration,
