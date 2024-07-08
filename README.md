@@ -1,4 +1,6 @@
 # smart_arenda
+
+## Настройка хостинга
 Чтобы узнать доступные версии Python, выполните команду:
 ```sh
 ls -la /opt/python/*/bin/python
