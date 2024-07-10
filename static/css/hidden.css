@@ -18,15 +18,7 @@ ul.aboutinsurance {
     padding-top: .5rem;
 }
 
-article.hidden,
-article.landlordregistration,
-article.landlordregistrationsuccess,
-article.expectacall,
-article.startacall,
-article.checktenants,
-article.aboutcontract,
-article.aboutinsurance,
-article.aboutverification {
+article.hidden {
     min-height: 100vh;
     padding: 0 7%;
     color: var(--article-header);
@@ -167,27 +159,17 @@ li.aboutinsurance2::marker {
     font-weight: bold;
 }
 
-button.checktenants,
-button.aboutcontract,
-button.aboutinsurance,
-button.aboutverification {
+button.hidden {
     color: var(--bg-blue);
     border: 0;
     font-size: 1rem;
     font-weight: 900;
-    background-color: transparent; 
+    background-color: transparent;
+    text-align: left;
 }
 
-.buttonhamburger,
-.buttonhamburgerclose,
-.buttonlandlordclose,
-.buttonlandlordsuccessclose,
-.buttonexpectacallclose,
-.buttonstartacallclose,
-button.checktenantsclose,
-button.aboutcontractclose,
-button.aboutinsuranceclose,
-button.aboutverificationclose {
+button.close,
+.buttonhamburger {
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
