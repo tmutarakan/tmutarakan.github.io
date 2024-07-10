@@ -22,6 +22,19 @@ document.querySelector('button.aboutinsuranceclose').onclick = sectionClose;
 document.querySelector('button.aboutverification').onclick = sectionOpen;
 document.querySelector('button.aboutverificationclose').onclick = sectionClose;
 
+document.querySelector('button.prepareanapartment').onclick = sectionOpen;
+document.querySelector('button.prepareanapartmentclose').onclick = sectionClose;
+
+document.querySelector('button.inventoryofproperty').onclick = sectionOpen;
+document.querySelector('button.inventoryofpropertyclose').onclick = sectionClose;
+
+document.querySelector('button.beforephotographing').onclick = sectionOpen;
+document.querySelector('button.beforephotographingclose').onclick = sectionClose;
+
+document.querySelector('button.apartmentrentalagreement').onclick = sectionOpen;
+document.querySelector('button.apartmentrentalagreementclose').onclick = sectionClose;
+
+
 document.querySelector('a.a-header').onclick = sectionClose;
 document.querySelector('a.a-works').onclick = sectionClose;
 document.querySelector('a.a-nearby').onclick = sectionClose;
