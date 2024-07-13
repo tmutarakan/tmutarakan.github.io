@@ -132,6 +132,8 @@ div.apartmentrentalagreement {
     gap: .5rem;
 }
 
+p.hidden,
+li.hidden,
 p.checktenants,
 li.checktenants,
 p.aboutcontract,
@@ -173,4 +175,12 @@ button.close,
     outline: none;
     background-color: rgba(0,0,0,0);
     display: flex;
+}
+
+button.instructions {
+    color: var(--doc-color);
+    font-size: .875rem;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
 }
