@@ -60,7 +60,7 @@ a {
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .companyname {
@@ -76,7 +76,15 @@ a {
     filter: invert(79%) sepia(48%) saturate(5600%) hue-rotate(1deg) brightness(105%) contrast(103%);
 }
 
-.helpyou {
+div.helpyou {
+    margin: auto 0;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+i.helpyou {
     font-size: 3rem;
     font-family: KanitCyrillic;
     font-weight: bold;
