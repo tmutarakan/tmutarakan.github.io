@@ -26,7 +26,7 @@ article.hidden {
     text-align: center;
     display: none;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: flex-start;
 }
 
 article.hidden * {
